@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # What's Writerside?
 
 - [Writerside](https://www.jetbrains.com/ko-kr/writerside/)
@@ -18,3 +19,7 @@
 [Algolia search](https://www.jetbrains.com/help/writerside/configure-search.html)라는 서비스를 사용하여, search index 추가 가능
 
 무료 플랜 10K, 이후에는 검색량에 따라 과금...
+=======
+# rundevelrun.github.io
+개인 Writerside
+>>>>>>> develop
