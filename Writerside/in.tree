@@ -6,6 +6,5 @@
                   name="YT Wiki"
                   start-page="jetbrains.md">
     <toc-element topic="jetbrains.md">
-        <toc-element topic="Intellij-VO-SQL-Mapper-자동-생성.md"/>
     </toc-element>
 </instance-profile>
