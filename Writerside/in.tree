@@ -9,4 +9,5 @@
     <toc-element topic="github-pages.md">
         <toc-element topic="Configuring-a-custom-domain.md" toc-title="사용자 정의 도메인 설정"/>
     </toc-element>
+    <toc-element topic="emoji.md"/>
 </instance-profile>
