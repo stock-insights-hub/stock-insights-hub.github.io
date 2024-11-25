@@ -4,7 +4,7 @@
 
 <instance-profile id="in"
                   name="YT Wiki"
-                  start-page="github-pages.md">
+                  start-page="Home.md">
     <toc-element topic="Home.md"/>
     <toc-element topic="OS.md">
         <toc-element topic="Linux.md"/>
