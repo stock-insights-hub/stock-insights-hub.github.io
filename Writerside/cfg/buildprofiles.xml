@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
+    <icons>
+        <shared-src>intellij-platform/shared_icons</shared-src>
+        <shared-src>intellij-platform/icons/custom</shared-src>
+        <shared-src>global_icons</shared-src>
+    </icons>
     <variables>
         <custom-css>custom.css</custom-css>
         <ignore-problems>VIS001,VIS011,MRK056</ignore-problems>
