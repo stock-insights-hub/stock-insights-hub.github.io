@@ -1,4 +1,4 @@
-# Available Emojis
+# Emojis
 
 Here is a table of the available emojis and their aliases.
 
