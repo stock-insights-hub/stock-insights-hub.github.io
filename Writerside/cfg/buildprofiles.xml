@@ -2,12 +2,16 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <variables></variables>
+    <variables>
+        <custom-css>custom.css</custom-css>
+        <ignore-problems>MRK023,MRK024,CTT002,REF005</ignore-problems>
+    </variables>
     <build-profile instance="in">
         <variables>
             <noindex-content>true</noindex-content>
-            <custom-css>custom.css</custom-css>
         </variables>
     </build-profile>
-
+    <footer>
+        <copyright>2024. YT All Rights Reserved.</copyright>
+    </footer>
 </buildprofiles>

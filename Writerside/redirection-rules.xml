@@ -10,4 +10,12 @@
         <description>Created after removal of "How to" from YT Wiki</description>
         <accepts>How-to.html</accepts>
     </rule>
+    <rule id="72e3cd13">
+        <description>Created after removal of "Tutorial" from YT Wiki</description>
+        <accepts>Tutorial.html</accepts>
+    </rule>
+    <rule id="1f23222e">
+        <description>Created after removal of "How to" from YT Wiki</description>
+        <accepts>How-to.html</accepts>
+    </rule>
 </rules>
