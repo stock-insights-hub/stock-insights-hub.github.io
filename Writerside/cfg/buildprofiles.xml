@@ -4,7 +4,7 @@
 
     <variables>
         <custom-css>custom.css</custom-css>
-        <ignore-problems>MRK056,VIS011,VIS001</ignore-problems>
+        <ignore-problems>VIS001,VIS011,MRK056</ignore-problems>
     </variables>
     <build-profile instance="in">
         <variables>
