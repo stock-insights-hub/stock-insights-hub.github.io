@@ -4,7 +4,10 @@
 
 <instance-profile id="in"
                   name="YT Wiki"
-                  start-page="jetbrains.md">
-    <toc-element topic="jetbrains.md">
+                  start-page="github-pages.md">
+    <toc-element topic="Programming.md"/>
+    <toc-element topic="github-pages.md">
+        <toc-element topic="Configuring-a-custom-domain.md" toc-title="사용자 정의 도메인 설정"/>
     </toc-element>
+    <toc-element topic="Tutorial.md"/>
 </instance-profile>
