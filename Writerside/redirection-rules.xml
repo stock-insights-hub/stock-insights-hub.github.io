@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="a59738c">
+        <description>Created after removal of "Programming" from YT Wiki</description>
+        <accepts>Programming.html</accepts>
+    </rule>
+    <rule id="3819bd7a">
+        <description>Created after removal of "DB" from YT Wiki</description>
+        <accepts>DB.html</accepts>
+    </rule>
+    <rule id="27edb634">
+        <description>Created after removal of "DevOps" from YT Wiki</description>
+        <accepts>DevOps.html</accepts>
+    </rule>
+    <rule id="5120a625">
+        <description>Created after removal of "DevKit" from YT Wiki</description>
+        <accepts>DevKit.html</accepts>
+    </rule>
+</rules>
