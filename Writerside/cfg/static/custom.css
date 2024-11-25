@@ -1,6 +1,6 @@
 @font-face {
     font-family: d2coding;
-    src: url(../font/D2Coding-Ver1.3.2-20180524.ttf);
+    src: url('D2Coding-Ver1.3.2-20180524.ttf');
 }
 
 * {

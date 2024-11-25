@@ -6,7 +6,7 @@
     <build-profile instance="in">
         <variables>
             <noindex-content>true</noindex-content>
-            <custom-css>css/custom.css</custom-css>
+            <custom-css>custom.css</custom-css>
         </variables>
     </build-profile>
 
