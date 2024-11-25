@@ -12,4 +12,6 @@
     <footer>
         <copyright>2024. YT All Rights Reserved.</copyright>
     </footer>
+
+    <sitemap priority="0.35" change-frequency="monthly"/>
 </buildprofiles>
