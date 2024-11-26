@@ -22,4 +22,12 @@
         <description>Created after removal of "DevKit" from YT Wiki</description>
         <accepts>DevKit.html</accepts>
     </rule>
+    <rule id="646e1811">
+        <description>Created after removal of "Bug report" from YT Wiki</description>
+        <accepts>Bug-report.html</accepts>
+    </rule>
+    <rule id="c3c42dc">
+        <description>Created after removal of "Starter" from YT Wiki</description>
+        <accepts>Starter.html</accepts>
+    </rule>
 </rules>
