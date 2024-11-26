@@ -7,6 +7,7 @@
     font-family: d2coding !important;
 }
 
-.wh-header__divider {
-    font-size: var(--rs-h4-font-size,15px) !important;
+.wh-header__divider::before {
+    font-size: var(--rs-h4-font-size,12px) !important;
+    content: '| 똑바로해 넌 정말';
 }
