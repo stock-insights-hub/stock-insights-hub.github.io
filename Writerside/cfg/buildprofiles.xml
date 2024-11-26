@@ -11,8 +11,7 @@
         </variables>
     </build-profile>
     <footer>
-        <copyright>2024. YT All Rights Reserved.</copyright>
+        <copyright>2024. RUN:DEVEL:RUN All Rights Reserved.</copyright>
     </footer>
-
-    <sitemap priority="0.35" change-frequency="monthly"/>
+    <sitemap priority="0.35" change-frequency="daily"/>
 </buildprofiles>

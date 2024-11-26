@@ -7,18 +7,19 @@
 
     <section-starting-page>
         <description>
-            Description
-        </description>
 
-        <!--    Add several topics that are most important for this section.    -->
+        </description>
         <primary>
+            <title>Work</title>
             <a href="Programming.md" type="development" summary="JAVA, Python, React...">Programming</a>
             <a href="Database.md" type="data" summary="PostgreSQL">Database</a>
+            <a href="DevOps.md" type="network" summary="GitLab, Jenkins, CI/CD...">DevOps</a>
             <a href="OS.md" type="server" summary="Linux, Windows">Operating System</a>
-            <a href="Blogging.md" type="idea" summary="Github Pages, Writerside">Blogging</a>
         </primary>
 
-
+        <secondary>
+            <title>Hobby</title>
+            <a href="Blogging.md" type="idea" summary="Github Pages, Writerside">Blogging</a>
+        </secondary>
     </section-starting-page>
-
 </topic>

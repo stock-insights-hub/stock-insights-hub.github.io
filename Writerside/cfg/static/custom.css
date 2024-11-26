@@ -1,3 +1,4 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap'); */
 @font-face {
     font-family: d2coding;
     src: url('D2Coding-Ver1.3.2-20180524.ttf');
@@ -5,3 +6,9 @@
 * {
     font-family: d2coding !important;
 }
+/*
+.wh-header__product-name {
+    font-family: "Nanum Brush Script", cursive !important;
+    font-size: var(--rs-h4-font-size,27px) !important;
+}
+*/
