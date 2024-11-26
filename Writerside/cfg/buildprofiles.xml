@@ -11,7 +11,7 @@
         </variables>
     </build-profile>
     <footer>
-        <social type="blog" href="https://github.com/rundevelrun"></social>
+        <link href="https://github.com/rundevelrun">GitHub</link>
         <copyright>2024. RUN:DEVEL:RUN All Rights Reserved.</copyright>
     </footer>
     <sitemap priority="0.35" change-frequency="daily"/>
