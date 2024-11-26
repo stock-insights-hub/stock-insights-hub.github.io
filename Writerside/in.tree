@@ -4,7 +4,7 @@
 
 <instance-profile id="in"
                   name="RUN:DEVEL:RUN"
-                  start-page="Database.md">
+                  start-page="Home.topic">
     <toc-element topic="Home.topic"/>
     <toc-element topic="Programming.md"/>
     <toc-element topic="Database.md">
