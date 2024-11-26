@@ -4,9 +4,11 @@
     <variables>
         <custom-css>custom.css</custom-css>
         <ignore-problems>MRK013,MRK014,MRK015,MRK017</ignore-problems>
+        <include-after-body>static/script.html</include-after-body>
     </variables>
     <build-profile instance="in">
         <variables>
+            <content-max-width>1500</content-max-width>
             <noindex-content>true</noindex-content>
         </variables>
     </build-profile>

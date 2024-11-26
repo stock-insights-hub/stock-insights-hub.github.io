@@ -6,9 +6,7 @@
 * {
     font-family: d2coding !important;
 }
-/*
-.wh-header__product-name {
-    font-family: "Nanum Brush Script", cursive !important;
-    font-size: var(--rs-h4-font-size,27px) !important;
+
+.wh-header__divider {
+    font-size: var(--rs-h4-font-size,15px) !important;
 }
-*/
