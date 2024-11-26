@@ -30,4 +30,28 @@
         <description>Created after removal of "Starter" from YT Wiki</description>
         <accepts>Starter.html</accepts>
     </rule>
+    <rule id="2919d0fa">
+        <description>Created after removal of "Section Starting Page" from YT Wiki</description>
+        <accepts>Section-Starting-Page.html</accepts>
+    </rule>
+    <rule id="7a0b551c">
+        <description>Created after removal of "Section Starting Page" from YT Wiki</description>
+        <accepts>Section-Starting-Page.html</accepts>
+    </rule>
+    <rule id="3ce083f4">
+        <description>Created after removal of "🏠" from YT Wiki</description>
+        <accepts>Home.html</accepts>
+    </rule>
+    <rule id="3bdbef4">
+        <description>Created after removal of "Section Starting Page" from YT Wiki</description>
+        <accepts>Section-Starting-Page_2.html</accepts>
+    </rule>
+    <rule id="29fbf0c1">
+        <description>Created after removal of "Ho" from YT Wiki</description>
+        <accepts>Home.html</accepts>
+    </rule>
+    <rule id="581c44fd">
+        <description>Created after removal of "Section Starting Page" from YT Wiki</description>
+        <accepts>Section-Starting-Page_2.html</accepts>
+    </rule>
 </rules>
