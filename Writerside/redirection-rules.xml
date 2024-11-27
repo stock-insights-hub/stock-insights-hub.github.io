@@ -62,4 +62,8 @@
         <description>Created after removal of "Section Starting Page" from RUN:DEVEL:RUN</description>
         <accepts>Section-Starting-Page_2.html</accepts>
     </rule>
+    <rule id="6c34a48a">
+        <description>Created after removal of "How to" from RUN:DEVEL:RUN</description>
+        <accepts>How-to.html</accepts>
+    </rule>
 </rules>
