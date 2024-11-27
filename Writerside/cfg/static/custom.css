@@ -9,5 +9,5 @@
 
 .wh-header__divider::before {
     font-size: var(--rs-h4-font-size,12px) !important;
-    content: '| 똑바로해 넌 정말';
+    content: '| 똑바로해 넌 정말' !important;
 }
