@@ -8,7 +8,6 @@
     </variables>
     <build-profile instance="in">
         <variables>
-            <content-max-width>1500</content-max-width>
             <noindex-content>true</noindex-content>
         </variables>
     </build-profile>
