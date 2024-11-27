@@ -1,3 +1,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798"
         crossorigin="anonymous"></script>-->
+
+<script>
+
+    let interval = "";
+
+    $(function(){
+        interval = setInterval(callback, 2000);
+    });
+    function callback(){
+        if($(".wh-header__divider") != null && $(".wh-header__divider").length != 0){
+            $(".wh-header__divider").append("<span>똑바로 해 넌 정말</span>");
+            clearInterval(interval);
+        }
+    }
+</script>

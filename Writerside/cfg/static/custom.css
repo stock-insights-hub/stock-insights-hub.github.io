@@ -6,8 +6,12 @@
 * {
     font-family: d2coding !important;
 }
-
-.wh-header__divider::before {
-    font-size: var(--rs-h4-font-size,12px) !important;
-    content: '| 똑바로해 넌 정말';
+.wh-header__divider span {
+    border-left: 1px solid #eee;
+    padding-left: 10px;
+    padding-top: 1px;
+    height: 10px;
+    font-size: 10px;
+    line-height: 10px;
+    vertical-align: bottom;
 }
