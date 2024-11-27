@@ -4,7 +4,7 @@
     <variables>
         <custom-css>custom.css</custom-css>
         <ignore-problems>MRK013,MRK014,MRK015,MRK017</ignore-problems>
-        <include-after-body>static/script.html</include-after-body>
+        <include-in-head>static/script.html</include-in-head>
     </variables>
     <build-profile instance="in">
         <variables>
