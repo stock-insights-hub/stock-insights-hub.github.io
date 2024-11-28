@@ -1,3 +1,1 @@
 # Windows
-
-Start typing here...

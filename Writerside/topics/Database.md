@@ -1,3 +1,1 @@
 # Database
-
-Start typing here...

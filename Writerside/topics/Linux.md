@@ -1,3 +1,1 @@
 # Linux
-
-Start typing here...

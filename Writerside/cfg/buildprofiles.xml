@@ -6,6 +6,8 @@
         <ignore-problems>MRK003,MRK013,MRK014,MRK015,MRK017</ignore-problems>
         <include-in-head>static/script.html</include-in-head>
         <web-root>https://rundevelrun.6developer.com/</web-root>
+        <header-logo>logo.jpg</header-logo>
+        <custom-favicons>logo.jpg</custom-favicons>
     </variables>
     <build-profile instance="in">
         <variables>
