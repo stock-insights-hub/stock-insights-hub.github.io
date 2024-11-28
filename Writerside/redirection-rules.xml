@@ -66,4 +66,8 @@
         <description>Created after removal of "How to" from RUN:DEVEL:RUN</description>
         <accepts>How-to.html</accepts>
     </rule>
+    <rule id="62be974e">
+        <description>Created after removal of "How to" from RUN:DEVEL:RUN</description>
+        <accepts>How-to.html</accepts>
+    </rule>
 </rules>

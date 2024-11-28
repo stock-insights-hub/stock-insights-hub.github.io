@@ -11,13 +11,13 @@
         <primary>
             <title>💻 Work</title>
             <a href="Programming.md" type="development" summary="JAVA, Python, React...">Programming</a>
-            <a href="Database.md" type="data" summary="PostgreSQL">Database</a>
+            <a href="세션-정보-확인-및-종료.md" type="data" summary="PostgreSQL">Database</a>
             <a href="DevOps.md" type="network" summary="GitLab, Jenkins, CI/CD...">DevOps</a>
             <a href="OS.md" type="server" summary="Linux, Windows">Operating System</a>
         </primary>
         <secondary>
             <title>🧻 Rest</title>
-            <a href="Blogging.md" type="idea" summary="Github Pages, Writerside">Blogging</a>
+            <a href="Github-Page-시작하기.md" type="idea" summary="Github Pages, Writerside">Blogging</a>
         </secondary>
     </section-starting-page>
 </topic>
