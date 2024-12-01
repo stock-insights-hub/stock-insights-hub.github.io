@@ -70,4 +70,8 @@
         <description>Created after removal of "How to" from RUN:DEVEL:RUN</description>
         <accepts>How-to.html</accepts>
     </rule>
+    <rule id="186a8524">
+        <description>Created after removal of "Swap memory 설정" from RUN:DEVEL:RUN</description>
+        <accepts>Swap-memory-설정.html</accepts>
+    </rule>
 </rules>
