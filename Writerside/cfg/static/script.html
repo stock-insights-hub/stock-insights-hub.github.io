@@ -20,17 +20,18 @@
     }
     function adsCallback(){
 
-        var ads = '<amp-ad width="100vw" height="320"\n'
+        var ads = '<div style="text-align:center;margin-bottom:10px;"><amp-ad width="100vw" height="320"\n'
                   '       type="adsense"\n'
                   '       data-ad-client="ca-pub-2327476184552798"\n'
                   '       data-ad-slot="1572389002"\n'
                   '       data-auto-format="rspv"\n'
                   '       data-full-width="">\n'
                   '    <div overflow=""></div>\n'
-                  '  </amp-ad>';
+                  '  </amp-ad></div>';
 
-        if($("layout--grow app__article") != null && $("layout--grow app__article").length != 0){
-            $("layout--grow app__article").append(ads);
+
+        if($("article") != null && $("article").length != 0){
+            $("article").append(ads);
             clearInterval(intervalAds);
         }
     }
