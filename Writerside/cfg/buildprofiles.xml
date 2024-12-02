@@ -4,7 +4,7 @@
     <variables>
         <custom-css>custom.css</custom-css>
         <ignore-problems>MRK003,MRK013,MRK014,MRK015,MRK017</ignore-problems>
-        <include-in-head>static/script.html</include-in-head>
+        <include-after-body>static/script.html</include-after-body>
         <web-root>https://rundevelrun.6developer.com/</web-root>
         <custom-favicons>favicon.ico</custom-favicons>
     </variables>
