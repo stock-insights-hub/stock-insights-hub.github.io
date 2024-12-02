@@ -3,7 +3,7 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <variables>
         <custom-css>custom.css</custom-css>
-        <ignore-problems>MRK003,MRK013,MRK014,MRK015,MRK017</ignore-problems>
+        <ignore-problems>MRK003,MRK013,MRK014,MRK015,MRK017,MRK032</ignore-problems>
         <include-after-body>static/script.html</include-after-body>
         <web-root>https://rundevelrun.6developer.com/</web-root>
         <custom-favicons>favicon.ico</custom-favicons>
