@@ -30,8 +30,8 @@
                   + '  </amp-ad></div>';
 
 
-        if($("article") != null && $("article").length != 0){
-            $("article").after(ads);
+        if($("footer") != null && $("footer").length != 0){
+            $("footer").before(ads);
             clearInterval(intervalAds);
         }
     }
