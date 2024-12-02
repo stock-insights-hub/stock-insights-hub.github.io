@@ -5,6 +5,7 @@
         <custom-css>custom.css</custom-css>
         <ignore-problems>MRK003,MRK013,MRK014,MRK015,MRK017,MRK032</ignore-problems>
         <include-after-body>static/script.html</include-after-body>
+        <include-in-head>static/head.html</include-in-head>
         <web-root>https://rundevelrun.6developer.com/</web-root>
         <custom-favicons>favicon.ico</custom-favicons>
     </variables>
