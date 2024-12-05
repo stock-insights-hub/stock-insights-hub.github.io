@@ -56,13 +56,13 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: robots.txt
-        run: cd dir && ls -al
-
       - name: Package and upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: dir
+
+      - name: robots.txt
+        run: mv dir/static/robots.txt dir/
 
       - name: Deploy to GitHub Pages
         id: deployment
