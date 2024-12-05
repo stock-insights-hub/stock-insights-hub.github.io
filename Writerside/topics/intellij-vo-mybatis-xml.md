@@ -206,7 +206,7 @@ def javaName(str, capitalize) {
 ## 💿 실행 및 결과
 
 ### ***실행*** 
-1. Database ➡ tables ➡ Tools ➡ Scripted Extensions ➡ 생성한 Groovy 파일
+1. *Database ➡ tables ➡ Tools ➡ Scripted Extensions ➡ 생성한 Groovy 파일*
 2. 저장할 위치 선택
 ![](20241205_101601.png)
 
