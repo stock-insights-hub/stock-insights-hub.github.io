@@ -61,9 +61,9 @@ jobs:
         with:
           path: dir
 
-      - name: robots.txt
-        run: mv dir/static/robots.txt dir/
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: robots.txt
+        run: ls -al && cd dir && ls -al && mv dir/static/robots.txt dir/
