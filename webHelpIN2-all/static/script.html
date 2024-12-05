@@ -1,0 +1,38 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+<!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798"
+        crossorigin="anonymous"></script>-->
+<script>
+
+    let intervalSubject = "";
+    let intervalAds = "";
+
+    $(function(){
+        intervalSubject = setInterval(subjectCallback, 300);
+        intervalAds = setInterval(adsCallback, 300);
+    });
+    function subjectCallback(){
+        if($(".wh-header__divider") != null && $(".wh-header__divider").length != 0){
+            $(".wh-header__divider").append("<span style='border-left: 1px solid #eee;padding-left: 10px;font-size: 10px;'>똑바로 해 넌 정말</span>");
+            clearInterval(intervalSubject);
+        }
+    }
+    function adsCallback(){
+
+        var ads = '<div style="text-align:center;margin-bottom:10px;"><amp-ad width="100vw" height="320"\n'
+                  + '       type="adsense"\n'
+                  + '       data-ad-client="ca-pub-2327476184552798"\n'
+                  + '       data-ad-slot="1572389002"\n'
+                  + '       data-auto-format="rspv"\n'
+                  + '       data-full-width="">\n'
+                  + '    <div overflow=""></div>\n'
+                  + '  </amp-ad></div>';
+
+
+        if($("footer") != null && $("footer").length != 0){
+            $("footer").before(ads);
+            clearInterval(intervalAds);
+        }
+    }
+
+</script>

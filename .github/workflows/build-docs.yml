@@ -53,6 +53,9 @@ jobs:
       - name: Unzip artifact
         run: unzip -O UTF-8 -qq '${{ env.ARTIFACT }}' -d dir
 
+      - name: mv robots.txt
+        run : mv dir/static/robots.txt dir/
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

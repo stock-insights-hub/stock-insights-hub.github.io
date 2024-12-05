@@ -8,6 +8,7 @@
         <include-in-head>static/head.html</include-in-head>
         <web-root>https://rundevelrun.6developer.com/</web-root>
         <custom-favicons>favicon.ico</custom-favicons>
+        <link-color>dracula</link-color>
     </variables>
     <build-profile instance="in">
         <variables>

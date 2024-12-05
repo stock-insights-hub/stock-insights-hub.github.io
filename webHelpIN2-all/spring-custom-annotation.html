@@ -1,0 +1,124 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF" data-link-color="#EB3F2F"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="built-on" content="2024-12-05T13:00:39.0724482"><title>🕶 Custom Annotation 만들기 (Feat. AOP) | RUN:DEVEL:RUN</title><script type="application/json" id="virtual-toc-data">[{"id":"-z5dcmg_4","level":0,"title":"✋ 들어가며","anchor":"#-z5dcmg_4"},{"id":"aop-custom-annotation","level":0,"title":"🧰 AOP를 통한 Custom Annotation 처리","anchor":"#aop-custom-annotation"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link href="static/custom.css" rel="stylesheet"><link rel="icon" type="image/x-icon" sizes="16x16" href="YT-Wiki/favicon.ico"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="🕶 Custom Annotation 만들기 (Feat. AOP) | RUN:DEVEL:RUN"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="RUN:DEVEL:RUN Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="https://rundevelrun.6developer.com/spring-custom-annotation.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="🕶 Custom Annotation 만들기 (Feat. AOP) | RUN:DEVEL:RUN"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "https://rundevelrun.6developer.com/spring-custom-annotation.html#webpage",
+    "url": "https://rundevelrun.6developer.com/spring-custom-annotation.html",
+    "name": "🕶 Custom Annotation 만들기 (Feat. AOP) | RUN:DEVEL:RUN",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "https://rundevelrun.6developer.com/#website",
+    "url": "https://rundevelrun.6developer.com/",
+    "name": "RUN:DEVEL:RUN Help"
+}</script><!-- End Schema.org --><meta name="naver-site-verification" content="3f4e19dac0ab79636f9cd1eb3ce9f9278acaf219" />
+<meta name="description" content="Software Architecture, Developer, 2013~">
+<meta name="twitter:description" content="Software Architecture, Developer, 2013~">
+<meta property="og:description" content="Software Architecture, Developer, 2013~"></head><body data-id="spring-custom-annotation" data-main-title="🕶 Custom Annotation 만들기 (Feat. AOP)" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="Programming.md|Programming///Spring.md|Spring"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>RUN:DEVEL:RUN  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="spring-custom-annotation" id="spring-custom-annotation.md">🕶 Custom Annotation 만들기 (Feat. AOP)</h1><aside class="prompt" data-type="tip" data-title="" id="-z5dcmg_3"><p id="-z5dcmg_6"><span class="emphasis" id="-z5dcmg_10"><span class="control" id="-z5dcmg_11">테스트 환경</span></span></p><p id="-z5dcmg_7">OpenJDK 17.0.2</p><p id="-z5dcmg_8">Gradle 8.0.2</p><p id="-z5dcmg_9">Spring Boot 3.0.5</p></aside><section class="chapter"><h2 id="-z5dcmg_4" data-toc="-z5dcmg_4">✋ 들어가며</h2><p id="-z5dcmg_12"><span class="emphasis" id="-z5dcmg_15">@Scheduled</span> Annotation으로 정해진 시간에 수행되는 메소드를 구현했다. 해당 Annotation을 사용하는 메소드 내에서 정상 여부의 로그를 남기기 위해서는 똑같은 소스를 매번 작성해야하는 문제가 발생했다.</p><p id="-z5dcmg_13">그리하여 <span class="emphasis" id="-z5dcmg_16">@Scheduled</span> Annotation을 커스텀하고 AOP를 활용하여 해당 Annotation을 사용할때 로그를 남기도록 구현해보고자한다.</p><section class="chapter"><h3 id="-z5dcmg_14" data-toc="-z5dcmg_14"><span class="emphasis" id="-z5dcmg_20"><span class="control" id="-z5dcmg_21">문제의 소스</span></span></h3><aside class="prompt" data-type="warning" data-title="" id="-z5dcmg_18"><p id="-z5dcmg_22"><span class="emphasis" id="-z5dcmg_24"><span class="control" id="-z5dcmg_25">로그를 남기기 위해서 매번 같은 소스가 작성되어 있다.</span></span></p><p id="-z5dcmg_23">logService.insertLog(result);</p></aside><div class="code-block" data-lang="java">
+@Component
+public class ScheduledComponent {
+    @Scheduled(cron= &quot;0 0 0 * * *&quot;)
+    public Map&lt;String, Object&gt; scheduled1() {
+        ...
+        // 로그 저장
+        logService.insertLog(result);
+        ...
+        return result;
+    }
+    @Scheduled(cron= &quot;0 0 1 * * *&quot;)
+    public int scheduled2() {
+        ...
+        // 로그 저장
+        logService.insertLog(result);
+        ...
+        return result;
+    }
+    ...
+}
+</div></section></section><section class="chapter"><h2 id="aop-custom-annotation" data-toc="aop-custom-annotation">🧰 AOP를 통한 Custom Annotation 처리</h2><section class="chapter"><h3 id="customscheduled-java" data-toc="customscheduled-java"><span class="emphasis" id="-z5dcmg_32"><span class="control" id="-z5dcmg_33">CustomScheduled.java</span></span></h3><ol class="list _decimal" id="-z5dcmg_30" type="1"><li class="list__item" id="-z5dcmg_34"><p>@Target : Annotation이 적용될 위치 </p><ul class="list _bullet" id="-z5dcmg_37"><li class="list__item" id="-z5dcmg_38"><p>@CustomScheduled를 메소드에 적용하기 위해서 <code class="code" id="-z5dcmg_39">ElementType.METHOD</code> 사용</p></li></ul></li><li class="list__item" id="-z5dcmg_35"><p>@Retention : Annotation이 적용될 범위 </p><ul class="list _bullet" id="-z5dcmg_40"><li class="list__item" id="-z5dcmg_41"><p>런타임까지 유지되는 Annotation을 정의하기 위해서 <code class="code" id="-z5dcmg_42">RetentionPolicy.RUNTIME</code> 사용</p></li></ul></li><li class="list__item" id="-z5dcmg_36"><p>@Scheduled : Scheduled Annotation과 같은 동작을 위해서 사용</p></li></ol><div class="code-block" data-lang="java">
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+@Scheduled
+public @interface CustomScheduled {
+    String cron() default &quot;&quot;;
+}
+</div></section><section class="chapter"><h3 id="customscheduledaspect-java" data-toc="customscheduledaspect-java"><span class="emphasis" id="-z5dcmg_46"><span class="control" id="-z5dcmg_47">CustomScheduledAspect.java</span></span></h3><ol class="list _decimal" id="-z5dcmg_44" type="1"><li class="list__item" id="-z5dcmg_48"><p>AOP가 구현된 클래스에는 <span class="emphasis" id="-z5dcmg_51">@Aspect</span> Annotation을 사용한다.</p></li><li class="list__item" id="-z5dcmg_49"><p>해당 클래스의 메소드에는 AOP를 적용할 패턴 혹은 관심사를 구현할 수 있다. </p><ul class="list _bullet" id="-z5dcmg_52"><li class="list__item" id="-z5dcmg_53"><p>@Before : 패턴이 실행되기 전에 동작</p></li><li class="list__item" id="-z5dcmg_54"><p>@After : 패턴이 실행된 이후에 동작</p></li><li class="list__item" id="-z5dcmg_55"><p>@Around : 패턴이 실행되기 전, 후 모두 동작 (실행결과 반환을 위해 반환 값은 Object)</p></li></ul></li><li class="list__item" id="-z5dcmg_50"><p>예제에서는 <span class="emphasis" id="-z5dcmg_56">@CustomScheduled</span>가 사용된 클래스명, 메소드명 그리고 결과를 로그 테이블에 저장하고 있다</p></li></ol><div class="code-block" data-lang="java">
+@Aspect
+@Component
+public class CustomScheduledAspect {
+
+    @Around(&quot;@annotation(customScheduled)&quot;)
+    public Object handleWsfScheduled(ProceedingJoinPoint joinPoint, CustomScheduled customScheduled) throws Throwable {
+
+        MethodSignature signature = (MethodSignature) joinPoint.getSignature();
+
+        // 실행
+        Object result = joinPoint.proceed();
+
+        Map&lt;String, Object&gt; logParam = new HashMap&lt;String, Object&gt;();
+        logParam.put(&quot;className&quot;, joinPoint.getSignature().getDeclaringTypeName());
+        logParam.put(&quot;methodName&quot;, joinPoint.getSignature().getName());
+        logParam.put(&quot;result&quot;, result.toString());
+
+        // 배치 로그 저장
+        logService.insertLog(param);
+
+        return result;
+
+    }
+}
+</div></section><section class="chapter"><h3 id="custom-annotation" data-toc="custom-annotation"><span class="emphasis" id="-z5dcmg_60"><span class="control" id="-z5dcmg_61">Custom Annotation 사용</span></span></h3><aside class="prompt" data-type="note" data-title="" id="-z5dcmg_58"><p id="-z5dcmg_62"><span class="emphasis" id="-z5dcmg_63">@CustomScheduled</span>를 사용하면 로그 관련 처리는 AOP에서 하고 있기 때문에 메소드에는 비즈니스 로직 수행 및 결과 반환에 대한 소스만 작성되어 있다.</p></aside><div class="code-block" data-lang="java">
+@Component
+public class ScheduledComponent {
+    @CustomScheduled(cron= &quot;0 0 0 * * *&quot;)
+    public Map&lt;String, Object&gt; scheduled1() {
+        ...
+        return result;
+    }
+    @CustomScheduled(cron= &quot;0 0 1 * * *&quot;)
+    public Map&lt;String, Object&gt; scheduled2() {
+        ...
+        return result;
+    }
+    ...
+}
+</div></section></section><div class="last-modified">Last modified: 05 12월 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="home.html" class="navigation-links__prev">🏡</a><a href="postgre-session-kill.html" class="navigation-links__next">🥑 세션 정보 확인 및 종료</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+<!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798"
+        crossorigin="anonymous"></script>-->
+<script>
+
+    let intervalSubject = "";
+    let intervalAds = "";
+
+    $(function(){
+        intervalSubject = setInterval(subjectCallback, 300);
+        intervalAds = setInterval(adsCallback, 300);
+    });
+    function subjectCallback(){
+        if($(".wh-header__divider") != null && $(".wh-header__divider").length != 0){
+            $(".wh-header__divider").append("<span style='border-left: 1px solid #eee;padding-left: 10px;font-size: 10px;'>똑바로 해 넌 정말</span>");
+            clearInterval(intervalSubject);
+        }
+    }
+    function adsCallback(){
+
+        var ads = '<div style="text-align:center;margin-bottom:10px;"><amp-ad width="100vw" height="320"\n'
+                  + '       type="adsense"\n'
+                  + '       data-ad-client="ca-pub-2327476184552798"\n'
+                  + '       data-ad-slot="1572389002"\n'
+                  + '       data-auto-format="rspv"\n'
+                  + '       data-full-width="">\n'
+                  + '    <div overflow=""></div>\n'
+                  + '  </amp-ad></div>';
+
+
+        if($("footer") != null && $("footer").length != 0){
+            $("footer").before(ads);
+            clearInterval(intervalAds);
+        }
+    }
+
+</script></body></html>
