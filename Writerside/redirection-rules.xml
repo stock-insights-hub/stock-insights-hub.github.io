@@ -74,12 +74,4 @@
         <description>Created after removal of "Swap memory 설정" from RUN:DEVEL:RUN</description>
         <accepts>Swap-memory-설정.html</accepts>
     </rule>
-    <rule id="447fe8b1">
-        <description>Created after removal of "Github Pages" from RUN:DEVEL:RUN</description>
-        <accepts>github-pages.html</accepts>
-    </rule>
-    <rule id="10ad05df">
-        <description>Created after removal of "Writerside" from RUN:DEVEL:RUN</description>
-        <accepts>writerside.html</accepts>
-    </rule>
 </rules>
