@@ -53,6 +53,9 @@ jobs:
       - name: Unzip artifact
         run: unzip -O UTF-8 -qq '${{ env.ARTIFACT }}' -d dir
 
+      - name: Create robots.txt
+        run: cd dir && touch robots.txt && echo "User-agent:*" >> robots.txt && echo "Allow:/" >> robots.txt
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
@@ -64,6 +67,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      - name: robots.txt
-        run: ls -al && cd dir && ls -al && mv dir/static/robots.txt dir/
