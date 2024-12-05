@@ -9,6 +9,8 @@
         <web-root>https://rundevelrun.6developer.com/</web-root>
         <custom-favicons>favicon.ico</custom-favicons>
         <link-color>dracula</link-color>
+        <analytics-head-script-file>static/analytics-head.html</analytics-head-script-file>
+        <analytics-body-html-file>static/analytics-body.html</analytics-body-html-file>
     </variables>
     <build-profile instance="in">
         <variables>
