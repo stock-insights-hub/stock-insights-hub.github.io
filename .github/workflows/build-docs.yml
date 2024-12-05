@@ -54,7 +54,7 @@ jobs:
         run: unzip -O UTF-8 -qq '${{ env.ARTIFACT }}' -d dir
 
       - name: Create robots.txt
-        run: cd dir && touch robots.txt && echo "User-agent:*" >> robots.txt && echo "Allow:/" >> robots.txt
+        run: cd dir && touch robots.txt && echo "User-agent: *" >> robots.txt && echo "Allow: /" >> robots.txt && echo "Sitemap: https://rundevelrun.6developer.com/sitemap.xml" >> robots.txt
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
