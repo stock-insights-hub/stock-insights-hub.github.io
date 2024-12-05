@@ -59,7 +59,6 @@ jobs:
       - name: Create robots.txt 2
         run: cd dir && sed -i -e 's/_SPACE_/ /g' robots.txt
 
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
