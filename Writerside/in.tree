@@ -33,4 +33,5 @@
             <toc-element topic="github-pages-personal-domain.md"/>
         </toc-element>
     </toc-element>
+    <toc-element topic="writerside.md" target-for-accept-web-file-names=""/>
 </instance-profile>
