@@ -53,8 +53,12 @@ jobs:
       - name: Unzip artifact
         run: unzip -O UTF-8 -qq '${{ env.ARTIFACT }}' -d dir
 
-      - name: Create robots.txt
-        run: cd dir && touch robots.txt && echo "User-agent:*" >> robots.txt && echo "Allow:/" >> robots.txt
+      - name: Create robots.txt 1
+        run: cd dir && touch robots.txt && echo "User-agent:_SPACE_*" >> robots.txt && echo "Allow:_SPACE_/" >> robots.txt && echo "Sitemap:_SPACE_https://rundevelrun.6developer.com/sitemap.xml" >> robots.txt
+
+      - name: Create robots.txt 2
+        run: cd dir && sed -i -e 's/_SPACE_/ /g' robots.txt
+
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
