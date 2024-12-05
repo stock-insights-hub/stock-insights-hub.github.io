@@ -57,7 +57,7 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: robots.txt
-        run: mv dir/static/robots.txt dir/robots.txt
+        run: pwd
 
       - name: Package and upload Pages artifact
         uses: actions/upload-pages-artifact@v3
