@@ -1,40 +1,33 @@
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798"
-        crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 
     let intervalSubject = "";
     let intervalAds = "";
 
-    $(function () {
+    $(function(){
         intervalSubject = setInterval(subjectCallback, 300);
-        if(localhost.hostname == "rundevelrun.6developer.com"){
-            intervalAds = setInterval(adsCallback, 300);
-        }
+        intervalAds = setInterval(adsCallback, 300);
     });
-
-    function subjectCallback() {
-        if ($(".wh-header__divider") != null && $(".wh-header__divider").length != 0) {
+    function subjectCallback(){
+        if($(".wh-header__divider") != null && $(".wh-header__divider").length != 0){
             $(".wh-header__divider").append("<span style='border-left: 1px solid #eee;padding-left: 10px;font-size: 10px;'>똑바로 해 넌 정말</span>");
             clearInterval(intervalSubject);
         }
     }
 
-    function adsCallback() {
+    function adsCallback(){
 
-        var ads =   '<divtag style="text-align:center;margin-bottom:10px;">' +
-                    '   <instag class="adsbygoogle"' +
-                    '       style="display:block"' +
-                    '       data-ad-client="ca-pub-2327476184552798"' +
-                    '       data-ad-slot="1572389002"' +
-                    '       data-ad-format="auto"' +
-                    '       data-full-width-responsive="true"></instag>' +
-                    '   <scripttag>(adsbygoogle = window.adsbygoogle || []).push({});</scripttag>' +
-                    '</divtag>';
+        var ads = '<div style="text-align:center;margin-bottom:10px;"><amp-ad width="100vw" height="320"\n'
+                  + '       type="adsense"\n'
+                  + '       data-ad-client="ca-pub-2327476184552798"\n'
+                  + '       data-ad-slot="1572389002"\n'
+                  + '       data-auto-format="rspv"\n'
+                  + '       data-full-width="">\n'
+                  + '    <div overflow=""></div>\n'
+                  + '  </amp-ad></div>';
 
-        ads = ads.replace(/tag/g,'');
 
-        if ($("footer") != null && $("footer").length != 0) {
+        if($("footer") != null && $("footer").length != 0){
             $("footer").before(ads);
             clearInterval(intervalAds);
         }
