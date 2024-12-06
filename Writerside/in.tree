@@ -4,8 +4,8 @@
 
 <instance-profile id="in"
                   name="RUN:DEVEL:RUN"
-                  start-page="index.topic">
-    <toc-element topic="index.topic"/>
+                  start-page="home.topic">
+    <toc-element topic="home.topic"/>
     <toc-element topic="Programming.md" target-for-accept-web-file-names="">
         <toc-element topic="Spring.md" target-for-accept-web-file-names="">
             <toc-element topic="spring-custom-annotation.md" />
