@@ -1,14 +1,16 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798"
         crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<>
+<script>
 
     let intervalSubject = "";
     let intervalAds = "";
 
     $(function () {
         intervalSubject = setInterval(subjectCallback, 300);
-        intervalAds = setInterval(adsCallback, 300);
+        if(localhost.hostname == "rundevelrun.6developer.com"){
+            intervalAds = setInterval(adsCallback, 300);
+        }
     });
 
     function subjectCallback() {
@@ -20,17 +22,17 @@
 
     function adsCallback() {
 
-        var txt = "script";
-        var ads =   '<div style="text-align:center;margin-bottom:10px;">' +
-                    '   <ins class="adsbygoogle"' +
+        var ads =   '<divtag style="text-align:center;margin-bottom:10px;">' +
+                    '   <instag class="adsbygoogle"' +
                     '       style="display:block"' +
                     '       data-ad-client="ca-pub-2327476184552798"' +
                     '       data-ad-slot="1572389002"' +
                     '       data-ad-format="auto"' +
-                    '       data-full-width-responsive="true"></ins>' +
-                    '   <script>(adsbygoogle = window.adsbygoogle || []).push({});</' + txt + '>' +
-                    '</div>';
+                    '       data-full-width-responsive="true"></instag>' +
+                    '   <scripttag>(adsbygoogle = window.adsbygoogle || []).push({});</scripttag>' +
+                    '</divtag>';
 
+        ads = ads.replace(/tag/g,'');
 
         if ($("footer") != null && $("footer").length != 0) {
             $("footer").before(ads);
