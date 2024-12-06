@@ -65,12 +65,6 @@ jobs:
       - name: Create robots.txt 2
         run: cd dir && sed -i -e 's/_SPACE_/ /g' robots.txt
 
-      - name: remove index.html
-        run: cd dir && rm -rf index.html
-
-      - name: rename index_topic.html to index.html
-        run: cd dir && mv index_topic.html index.html
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
