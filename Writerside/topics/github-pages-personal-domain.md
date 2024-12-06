@@ -39,3 +39,7 @@ Jetbrains 신봉자인 내 눈 앞에 나타난 [Writerside](https://www.jetbrai
 티스토리, 네이버 블로그, 벨로그를 거쳐서 Jekyll 테마를 활용한 Github Pages까지 운영을 해봤지만 드디어 똥손이 운영하기에 가장 적합한 도구를 찾은 것 같다.
 
 앞으로 프로젝트를 하면서 천천히 자료를 추가해야겠다.
+
+<br/>
+
+<p id="adsense-bar"></p>

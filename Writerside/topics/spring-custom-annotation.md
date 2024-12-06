@@ -112,3 +112,9 @@ public class ScheduledComponent {
     ...
 }
 ```
+
+## 👋
+
+<br/>
+
+<p id="adsense-bar"></p>
