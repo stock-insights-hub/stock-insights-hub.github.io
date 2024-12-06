@@ -52,5 +52,3 @@ where datname = '_YOUR_DATABASE_NAME_';
 ## 👋
 
 <br/>
-
-<p id="adsense-bar"></p>

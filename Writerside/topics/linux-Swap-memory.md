@@ -110,5 +110,3 @@ Swap:            0B          0B          0B
 Windows 10 Pro 환경에서 WSL을 활성화하고 CentOS 8을 설치해봤는데 생각보다 안정적이지 못한 느낌이 든다. 연습장으로 사용할 다른 대안을 찾아봐야겠다.
 
 <br/>
-
-<p id="adsense-bar"></p>

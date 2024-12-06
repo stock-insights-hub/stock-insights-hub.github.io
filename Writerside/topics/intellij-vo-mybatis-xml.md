@@ -286,5 +286,3 @@ def javaName(str, capitalize) {
 역시 _Jetbrains_ 은 최고.. _IntelliJ_ 를 사용하지 않을 수 없다. (~~학생계정으로 써서 미안~~)
 
 <br/>
-
-<p id="adsense-bar"></p>
