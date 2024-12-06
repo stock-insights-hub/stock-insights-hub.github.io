@@ -18,7 +18,9 @@
     </toc-element>
     <toc-element topic="DevOps.md" target-for-accept-web-file-names=""/>
     <toc-element topic="OS.md" target-for-accept-web-file-names="">
-        <toc-element topic="Linux.md" target-for-accept-web-file-names=""/>
+        <toc-element topic="Linux.md" target-for-accept-web-file-names="">
+            <toc-element topic="linux-Swap-memory.md"/>
+        </toc-element>
         <toc-element topic="Windows.md" target-for-accept-web-file-names=""/>
     </toc-element>
     <toc-element topic="Tools.md" target-for-accept-web-file-names="">
