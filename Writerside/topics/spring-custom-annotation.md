@@ -116,3 +116,5 @@ public class ScheduledComponent {
 ## 👋
 
 <br/>
+
+<s id="adsense-bar"></s>

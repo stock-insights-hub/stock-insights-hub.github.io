@@ -41,3 +41,5 @@ Jetbrains 신봉자인 내 눈 앞에 나타난 [Writerside](https://www.jetbrai
 앞으로 프로젝트를 하면서 천천히 자료를 추가해야겠다.
 
 <br/>
+
+<s id="adsense-bar"></s>
