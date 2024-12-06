@@ -10,6 +10,7 @@
         <custom-favicons>favicon.ico</custom-favicons>
         <analytics-head-script-file>static/analytics-head.html</analytics-head-script-file>
         <analytics-body-html-file>static/analytics-body.html</analytics-body-html-file>
+        <primary-color>strawberry</primary-color>
     </variables>
     <build-profile instance="in">
         <variables>

@@ -1,4 +1,4 @@
-# 🕶 Custom Annotation 만들기 (Feat. AOP)
+# Custom Annotation 만들기 (Feat. AOP)
 
 > ***테스트 환경***
 >
@@ -112,4 +112,3 @@ public class ScheduledComponent {
     ...
 }
 ```
-

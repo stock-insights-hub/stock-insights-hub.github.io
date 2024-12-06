@@ -1,4 +1,4 @@
-# ⚽ VO 및 Mybatis XML 자동 생성
+# VO 및 Mybatis XML 자동 생성
 
 > ***테스트 환경***
 > 
