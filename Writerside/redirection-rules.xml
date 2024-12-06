@@ -74,4 +74,24 @@
         <description>Created after removal of "Swap memory 설정" from RUN:DEVEL:RUN</description>
         <accepts>Swap-memory-설정.html</accepts>
     </rule>
+    <rule id="2f035521">
+        <description>Created after removal of "Empty MD Topic" from RUN:DEVEL:RUN</description>
+        <accepts>Empty-MD-Topic.html</accepts>
+    </rule>
+    <rule id="7dd79986">
+        <description>Created after removal of "How to" from RUN:DEVEL:RUN</description>
+        <accepts>How-to.html</accepts>
+    </rule>
+    <rule id="3d4e8aeb">
+        <description>Created after removal of "Overview" from RUN:DEVEL:RUN</description>
+        <accepts>Overview.html</accepts>
+    </rule>
+    <rule id="3c83907b">
+        <description>Created after removal of "How to" from RUN:DEVEL:RUN</description>
+        <accepts>How-to.html</accepts>
+    </rule>
+    <rule id="79cbf198">
+        <description>Created after removal of "How to" from RUN:DEVEL:RUN</description>
+        <accepts>How-to_2.html</accepts>
+    </rule>
 </rules>

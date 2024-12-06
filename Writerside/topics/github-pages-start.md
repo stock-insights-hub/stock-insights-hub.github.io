@@ -1,4 +1,4 @@
-# ⭐ Github Page 시작하기
+# Github Page 시작하기
 
 ## 🔈 Github 계정 준비
 
