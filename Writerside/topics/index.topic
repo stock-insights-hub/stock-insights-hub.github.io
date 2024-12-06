@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="🏡" id="Home">
+       title="🏡" id="index" help-id="Home">
 
     <no-index>true</no-index>
 
@@ -16,8 +16,8 @@
             <a href="spring-custom-annotation.md" type="development" summary="JAVA, Python, React...">Programming</a>
             <a href="postgre-session-kill.md" type="data" summary="PostgreSQL..">Database</a>
             <a href="intellij-vo-mybatis-xml.md" type="tools" summary="Jetbrains IntelliJ..">Tools</a>
-            <!--<a href="DevOps.md" type="network" summary="GitLab, Jenkins, CI/CD...">DevOps</a>
-            <a href="OS.md" type="server" summary="Linux, Windows">Operating System</a>-->
+            <!--<a href="DevOps.md" type="network" summary="GitLab, Jenkins, CI/CD...">DevOps</a>-->
+            <a href="linux-Swap-memory.md" type="server" summary="Linux, Windows">Operating System</a>
         </primary>
         <secondary>
             <title>🧻 Rest</title>
