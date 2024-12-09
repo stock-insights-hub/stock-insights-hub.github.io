@@ -94,4 +94,8 @@
         <description>Created after removal of "How to" from RUN:DEVEL:RUN</description>
         <accepts>How-to_2.html</accepts>
     </rule>
+    <rule id="6080358d">
+        <description>Created after removal of "Innotek" from RUN:DEVEL:RUN</description>
+        <accepts>Innotek.html</accepts>
+    </rule>
 </rules>
