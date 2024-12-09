@@ -7,10 +7,10 @@
                   start-page="home.topic">
     <toc-element topic="home.topic"/>
     <toc-element topic="Programming.md" target-for-accept-web-file-names="">
-        <toc-element topic="Spring.md">
+        <toc-element topic="Spring.md" target-for-accept-web-file-names="">
             <toc-element topic="spring-custom-annotation.md"/>
         </toc-element>
-        <toc-element topic="React.md">
+        <toc-element topic="React.md" target-for-accept-web-file-names="">
             <toc-element topic="ERROR-Slider-cannot-be-used-as-a-JSX-component.md"/>
         </toc-element>
     </toc-element>
