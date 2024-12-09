@@ -27,7 +27,7 @@
 }
 ```
 
-## Writerside buildprofiles 설정
+## 🛠️ Writerside buildprofiles 설정
 
 ### ***Writerside/cfg/buildprofiles.xml***
 - *buildprofiles ➡ variables ➡ custom-css* 영역에 생성한 CSS 파일명을 입력한다.
