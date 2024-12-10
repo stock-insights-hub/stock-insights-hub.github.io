@@ -11,7 +11,7 @@
         <analytics-head-script-file>static/analytics-head.html</analytics-head-script-file>
         <analytics-body-html-file>static/analytics-body.html</analytics-body-html-file>
         <primary-color>metallic</primary-color>
-        <locale-code>ko</locale-code>
+        <locale-code>ko-KR</locale-code>
     </variables>
     <build-profile instance="in">
         <variables>

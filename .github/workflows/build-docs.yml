@@ -72,7 +72,7 @@ jobs:
         run: cd dir && sed -i -e 's#<span class="text-line-through" id="adsense-bar"></span>#<amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-2327476184552798" data-ad-slot="1572389002" data-auto-format="rspv" data-full-width=""><div overflow=""></div></amp-ad>#g' *.html
 
       - name: HTML Locale
-        run: cd dir && sed -i -e 's#en-US#ko#g' *.html
+        run: cd dir && sed -i -e 's#en-US#ko-KR#g' *.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
