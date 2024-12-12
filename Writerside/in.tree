@@ -19,7 +19,11 @@
             <toc-element topic="postgre-session-kill.md"/>
         </toc-element>
     </toc-element>
-    <toc-element topic="DevOps.md" target-for-accept-web-file-names=""/>
+    <toc-element topic="DevOps.md" target-for-accept-web-file-names="">
+        <toc-element topic="Jenkins.md" target-for-accept-web-file-names="">
+            <toc-element topic="Jenkins-SSH-Agent-Jenkinsfile.md"/>
+        </toc-element>
+    </toc-element>
     <toc-element topic="OS.md" target-for-accept-web-file-names="">
         <toc-element topic="Linux.md" target-for-accept-web-file-names="">
             <toc-element topic="linux-Swap-memory.md"/>
