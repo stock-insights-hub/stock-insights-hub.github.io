@@ -16,7 +16,7 @@
 [Red Hat Enterprise Linux 권장 Swap 크기](https://access.redhat.com/ko/solutions/744483)를 참고하면 Swap 공간을 얼마나 할당해서 사용해야 할지에 대한 답을 찾을 수 있지만 디스크의 일부분을 사용하기 때문에 여유 디스크의 사이즈도 고려해서 할당해야 한다.
 
 
-## Swap Memory 할당 {id="swap-memory_3"}
+## ✅ Swap Memory 할당 {id="swap-memory_3"}
 
 ### ***메모리 확인***
 할당 전 메모리를 확인해보면 Swap 영역이 '0B'로 잡혀있는 것을 확인 할 수 있다.
@@ -83,7 +83,7 @@ UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX /swapfile swap defaults 0 0
 </code-block>
 
 
-## Swap Memory 해제
+## ❎ Swap Memory 해제
 
 ### ***Swap 영역 비활성화*** {id="swap_1"}
 스왑을 비활성화 해주고 생성했던 '/swapfile'을 삭제하면 다시 '0B'로 변한걸 확인할 수 있다.
