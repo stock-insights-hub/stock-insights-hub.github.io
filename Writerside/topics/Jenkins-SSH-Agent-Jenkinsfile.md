@@ -16,8 +16,8 @@ SSH를 활용해서 Agent를 시작하는 방식을 선택하려고 하기 떄�
 ### ***ssh-keygen***
 1. 놀랍게도 Enter의 입력만으로 SSH Key가 생성된다.
 <code-block lang="sh">
-[rundevelrun@ ~]$ cd ~/.ssh
-[rundevelrun@ .ssh]$ ssh-keygen -t rsa
+cd ~/.ssh
+ssh-keygen -t rsa
 </code-block>
 <code-block lang="sh">
 ✔
@@ -32,7 +32,7 @@ The key's randomart image is:
 </code-block>
 2. ~/.ssh 경로에 아래와 같은 파일들이 생성되었다면 성공이다.
 <code-block lang="sh">
-[rundevelrun@ .ssh]$ ls -al
+ls -al
 </code-block>
 <code-block lang="sh">
 ✔
@@ -44,7 +44,7 @@ The key's randomart image is:
 ### ***SSH Key 확인*** {id="ssh-key_1"}
 *id_rsa* 파일을 열어서 내용을 확인하고 Jenkins 설정에 사용해야하기 때문에 복사해둔다.
 <code-block lang="sh">
-[rundevelrun@ .ssh]$ cat id_rsa
+cat id_rsa
 </code-block>
 <code-block lang="sh">
 ✔

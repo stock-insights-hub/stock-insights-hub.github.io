@@ -21,7 +21,7 @@
 ### ***메모리 확인***
 할당 전 메모리를 확인해보면 Swap 영역이 '0B'로 잡혀있는 것을 확인 할 수 있다.
 <code-block lang="sh">
-[rundevelrun@ ~]$ free -h
+free -h
 </code-block>
 <code-block lang="sh">
 ✔
@@ -33,10 +33,10 @@ Swap:            0B          0B          0B
 ### ***Swap File 생성 및 권한 설정***
 할당할 용량의 파일을 루트 경로에 생성하고 권한을 설정한다.
 <code-block lang="sh">
-[rundevelrun@ip-127-0-0-1 /]$ fallocate -l 8G /swapfile
-[rundevelrun@ip-127-0-0-1 /]$ chmod 600 /swapfile
-[rundevelrun@ip-127-0-0-1 /]$ cd /
-[rundevelrun@ip-127-0-0-1 /]$ ls -alh
+fallocate -l 8G /swapfile
+chmod 600 /swapfile
+cd /
+ls -alh
 </code-block>
 <code-block lang="sh">
 ✔
@@ -51,7 +51,7 @@ dr-xr-xr-x  22 root    root     314 Dec  5 04:53 ..
 - 재기동 후에도 파티션이 유지되도록 설정하기 위해서 출력되는 UUID는 복사해둔다. 
 
 <code-block lang="sh">
-[rundevelrun@ip-127-0-0-1 /]$ mkswap /swapfile
+mkswap /swapfile
 </code-block>
 <code-block lang="sh">
 ✔
@@ -61,8 +61,8 @@ no label, UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 
 2. 스왑 영역 활성화 및 확인
 <code-block lang="sh">
-[rundevelrun@ip-127-0-0-1 /]$ swapon /swapfile
-[rundevelrun@ip-127-0-0-1 /]$ free -h
+swapon /swapfile
+free -h
 </code-block>
 <code-block lang="sh">
 ✔
@@ -74,7 +74,7 @@ Swap:            8G          0B          0B
 3. fstab에 파티션 추가
 - 복사해두었던 UUID를 Tab 문자열이나 공백으로 구분해서 '/etc/fstab' 하단에 작성하면 재기동 후에도 유지된다.
 <code-block lang="sh">
-[rundevelrun@ip-127-0-0-1 /]$ vi /etc/fstab
+vi /etc/fstab
 </code-block>
 <code-block lang="sh">
 ✔
@@ -88,9 +88,9 @@ UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX /swapfile swap defaults 0 0
 ### ***Swap 영역 비활성화*** {id="swap_1"}
 스왑을 비활성화 해주고 생성했던 '/swapfile'을 삭제하면 다시 '0B'로 변한걸 확인할 수 있다.
 <code-block lang="sh">
-[rundevelrun@ip-127-0-0-1 /]$ swapoff /swapfile
-[rundevelrun@ip-127-0-0-1 /]$ rm -rf /swapfile
-[rundevelrun@ip-127-0-0-1 /]$ free -h
+swapoff /swapfile
+rm -rf /swapfile
+free -h
 </code-block>
 <code-block lang="sh">
 ✔
@@ -102,7 +102,7 @@ Swap:            0B          0B          0B
 ### ***fstab 파티션 삭제***
 추가했던 UUID를 제거하면 Swap Memory 해제가 완료된다. 
 <code-block lang="sh">
-[rundevelrun@ip-127-0-0-1 /]$ vi /etc/fstab
+vi /etc/fstab
 </code-block>
 
 
