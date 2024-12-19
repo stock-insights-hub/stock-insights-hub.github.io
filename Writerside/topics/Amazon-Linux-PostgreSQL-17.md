@@ -1,0 +1,3 @@
+# Amazon Linux에 PostgreSQL 17 설치
+
+Start typing here...
