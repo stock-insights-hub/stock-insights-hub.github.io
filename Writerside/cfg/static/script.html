@@ -17,6 +17,7 @@
     function giscusCallback(){
         if($(".article") != null && $(".article").length != 0){
             $(".article").append($(".giscus"));
+            $(".giscus").css("display","block");
             clearInterval(intervalGiscus);
         }
     }
