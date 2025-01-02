@@ -15,14 +15,19 @@
         }
     }
     function giscusCallback(){
-        if($(".article") != null && $(".article").length != 0){
-            $(".article").append($(".giscus"));
-            $(".giscus").css("display","block");
+        if($(".article") != null && $(".article").length != 0 && $(".giscus").length == 1){
+            //$(".article").append($(".giscus").eq(0).clone());
+           // $(".giscus").eq(1).css("display","block");
             clearInterval(intervalGiscus);
         }
     }
+
+   // window.navigation.addEventListener("navigate", (event) => {
+   //     giscusCallback();
+  //  });
+
 </script>
-<script src="https://giscus.app/client.js"
+<!-- <script src="https://giscus.app/client.js"
         data-repo="rundevelrun/rundevelrun.github.io"
         data-repo-id="R_kgDONTEm1w"
         data-category="General"
@@ -37,4 +42,4 @@
         data-loading="lazy"
         crossorigin="anonymous"
         async>
-</script>
+</script> -->
