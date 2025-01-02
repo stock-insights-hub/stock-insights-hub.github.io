@@ -16,25 +16,7 @@
     }
     function giscusCallback(){
         if($(".article") != null && $(".article").length != 0){
-         /*   var scriptElement = document.createElement("script");
-            $(scriptElement).attr("data-repo","https://giscus.app/client.js");
-            $(scriptElement).attr("data-repo-id","R_kgDONTEm1w");
-            $(scriptElement).attr("data-category","General");
-            $(scriptElement).attr("data-category-id","DIC_kwDONTEm184CkkmL");
-            $(scriptElement).attr("data-mapping", "pathname");
-            $(scriptElement).attr("data-strict", "0");
-            $(scriptElement).attr("data-reactions-enabled", "1");
-            $(scriptElement).attr("data-emit-metadata", "0");
-            $(scriptElement).attr("data-input-position", "bottom");
-            $(scriptElement).attr("data-theme","preferred_color_scheme");
-            $(scriptElement).attr("data-lang","ko");
-            $(scriptElement).attr("crossorigin","anonymous");
-            scriptElement.async = true;
-            */
-
-            $(".article").append('<div class="giscus" id="giscus"></div>');
-            // $(".article").append(scriptElement);
-
+            $(".article").append($(".giscus"));
             clearInterval(intervalGiscus);
         }
     }
