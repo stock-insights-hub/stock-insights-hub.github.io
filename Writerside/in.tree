@@ -21,7 +21,7 @@
         </toc-element>
     </toc-element>
     <toc-element topic="DevOps.md" target-for-accept-web-file-names="">
-        <toc-element topic="Jenkins.md">
+        <toc-element topic="Jenkins.md" target-for-accept-web-file-names="">
             <toc-element topic="Jenkins-Install-AWS-EC2.md"/>
             <toc-element topic="Jenkins-SSH-Agent-Jenkinsfile.md"/>
         </toc-element>

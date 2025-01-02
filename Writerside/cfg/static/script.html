@@ -16,7 +16,7 @@
     }
     function giscusCallback(){
         if($(".article") != null && $(".article").length != 0){
-            var scriptElement = document.createElement("script");
+         /*   var scriptElement = document.createElement("script");
             $(scriptElement).attr("data-repo","https://giscus.app/client.js");
             $(scriptElement).attr("data-repo-id","R_kgDONTEm1w");
             $(scriptElement).attr("data-category","General");
@@ -30,11 +30,28 @@
             $(scriptElement).attr("data-lang","ko");
             $(scriptElement).attr("crossorigin","anonymous");
             scriptElement.async = true;
+            */
 
             $(".article").append('<div class="giscus" id="giscus"></div>');
-            $(".article").append(scriptElement);
+            // $(".article").append(scriptElement);
 
             clearInterval(intervalGiscus);
         }
     }
+</script>
+<script src="https://giscus.app/client.js"
+        data-repo="rundevelrun/rundevelrun.github.io"
+        data-repo-id="R_kgDONTEm1w"
+        data-category="General"
+        data-category-id="DIC_kwDONTEm184CkkmM"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="ko"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
 </script>
