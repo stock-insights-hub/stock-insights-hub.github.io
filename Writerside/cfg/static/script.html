@@ -17,6 +17,7 @@
     function giscusCallback(){
         if($(".article") != null && $(".article").length != 0 && $(".article .giscus").length == 0){
             $(".article").append($(".giscus").eq(0).clone());
+            $(".giscus").eq(0).css("display","none");
             $(".article .giscus").css("display","block");
             clearInterval(intervalGiscus);
         }
@@ -32,7 +33,7 @@
         data-repo-id="R_kgDONTEm1w"
         data-category="General"
         data-category-id="DIC_kwDONTEm184CkkmM"
-        data-mapping="pathname"
+        data-mapping="url"
         data-strict="0"
         data-reactions-enabled="1"
         data-emit-metadata="0"

@@ -51,6 +51,5 @@ where datname = '_YOUR_DATABASE_NAME_';
 
 ## 👋
 
-<br/>
 
-<s id="github-comment"></s>
+

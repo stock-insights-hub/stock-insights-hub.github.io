@@ -115,6 +115,5 @@ public class ScheduledComponent {
 
 ## 👋
 
-<br/>
 
-<s id="github-comment"></s>
+
