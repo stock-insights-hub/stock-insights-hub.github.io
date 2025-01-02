@@ -159,4 +159,4 @@ sudo systemctl daemon-reload
 
 <br/>
 
-<s id="adsense-bar"></s>
+<s id="github-comment"></s>

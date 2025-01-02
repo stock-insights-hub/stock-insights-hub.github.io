@@ -57,4 +57,4 @@ D2Coding을 사용하면 개발을 하면서 구분하지 못하는 문자가 �
 
 <br/>
 
-<s id="adsense-bar"></s>
+<s id="github-comment"></s>

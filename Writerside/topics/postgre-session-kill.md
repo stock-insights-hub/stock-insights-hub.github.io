@@ -53,4 +53,4 @@ where datname = '_YOUR_DATABASE_NAME_';
 
 <br/>
 
-<s id="adsense-bar"></s>
+<s id="github-comment"></s>

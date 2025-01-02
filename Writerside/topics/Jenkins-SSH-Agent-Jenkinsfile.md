@@ -128,4 +128,4 @@ Jenkins Node Agent를 사용해서 원격 서버에 배포하는 방식을 기�
 
 <br/>
 
-<s id="adsense-bar"></s>
+<s id="github-comment"></s>

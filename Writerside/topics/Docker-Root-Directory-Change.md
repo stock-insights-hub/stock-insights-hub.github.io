@@ -112,4 +112,4 @@ Docker Root Dir: /data/docker
 
 <br/>
 
-<s id="adsense-bar"></s>
+<s id="github-comment"></s>

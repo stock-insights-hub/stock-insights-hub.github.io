@@ -41,4 +41,4 @@ Writerside를 이용해서 포스팅을 이어가고 있는데 아직 카테고�
 
 <br/>
 
-<s id="adsense-bar"></s>
+<s id="github-comment"></s>

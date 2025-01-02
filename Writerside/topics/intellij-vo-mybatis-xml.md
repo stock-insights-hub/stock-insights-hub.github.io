@@ -287,4 +287,4 @@ def javaName(str, capitalize) {
 
 <br/>
 
-<s id="adsense-bar"></s>
+<s id="github-comment"></s>

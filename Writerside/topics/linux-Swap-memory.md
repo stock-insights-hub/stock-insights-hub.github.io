@@ -111,4 +111,4 @@ Windows 10 Pro 환경에서 WSL을 활성화하고 CentOS 8을 설치해봤는�
 
 <br/>
 
-<s id="adsense-bar"></s>
+<s id="github-comment"></s>

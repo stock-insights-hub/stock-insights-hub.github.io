@@ -42,4 +42,4 @@ Jetbrains 신봉자인 내 눈 앞에 나타난 [Writerside](https://www.jetbrai
 
 <br/>
 
-<s id="adsense-bar"></s>
+<s id="github-comment"></s>

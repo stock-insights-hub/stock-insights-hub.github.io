@@ -96,4 +96,4 @@ Property 'refs' is missing in type 'Slider' but required in type 'Component<any,
 
 <br/>
 
-<s id="adsense-bar"></s>
+<s id="github-comment"></s>
