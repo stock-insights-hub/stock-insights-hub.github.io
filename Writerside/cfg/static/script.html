@@ -15,7 +15,7 @@
         }
     }
     function giscusCallback(){
-        if($("article") != null && $("article").length != 0){
+        if($(".article") != null && $(".article").length != 0){
             var scriptElement = document.createElement("script");
             $(scriptElement).attr("data-repo","https://giscus.app/client.js");
             $(scriptElement).attr("data-repo-id","R_kgDONTEm1w");
@@ -29,10 +29,10 @@
             $(scriptElement).attr("data-theme","preferred_color_scheme");
             $(scriptElement).attr("data-lang","ko");
             $(scriptElement).attr("crossorigin","anonymous");
-            $(scriptElement).attr("async",true);
+            scriptElement.async = true;
 
-            $("article").append('<div class="giscus" id="giscus"></div>');
-            $("article").append(scriptElement);
+            $(".article").append('<div class="giscus" id="giscus"></div>');
+            $(".article").append(scriptElement);
 
             clearInterval(intervalGiscus);
         }
