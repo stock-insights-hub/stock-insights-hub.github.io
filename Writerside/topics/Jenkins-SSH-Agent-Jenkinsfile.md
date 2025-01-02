@@ -4,7 +4,7 @@
 >
 > Jenkins 2.387.3
 >
-> Amazon Linux 2 (EC2) 
+> Amazon Linux 2023 (EC2) 
 
 ## ✋ 들어가며
 젠킨스가 설치되어있는 서버와 실제로 어플리케이션이 배포될 대상 서버가 다른 경우에 _SSH Agent_ 를 이용한 원격 배포 방법도 있겠지만 이 글에서는 Jenkins Node Agent를 활용한 방법을 다뤄보려고한다.

@@ -2,7 +2,7 @@
 
 > ***테스트 환경***
 >
-> Amazon Linux 2 (EC2)
+> Amazon Linux 2023 (EC2)
 >
 > Docker 20.10.25
 

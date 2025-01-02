@@ -2,7 +2,7 @@
 
 > ***테스트 환경***
 >
-> Amazon Linux 2 (EC2)
+> Amazon Linux 2023 (EC2)
 > 
 > OpenJDK 17.0.2
 
@@ -37,7 +37,7 @@ sudo yum install jenkins -y
 
 ### ***부팅시 시작되는 서비스 등록***
 <code-block lang="sh">
-sudo yum install jenkins -y
+sudo systemctl enable jenkins
 </code-block>
 
 ### ***Jenkins 시작*** {id="jenkins start"}
