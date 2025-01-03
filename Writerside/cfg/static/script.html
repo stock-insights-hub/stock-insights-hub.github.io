@@ -6,7 +6,7 @@
 
     $(function(){
         intervalSubject = setInterval(subjectCallback, 300);
-        intervalGiscus = setInterval(giscusCallback, 300);
+        // intervalGiscus = setInterval(giscusCallback, 300);
     });
     function subjectCallback(){
         if($(".wh-header__divider") != null && $(".wh-header__divider").length != 0){
@@ -44,8 +44,8 @@
         }
     }
 
-    window.navigation.addEventListener("navigate", (event) => {
-        giscusCallback();
-    });
+    // window.navigation.addEventListener("navigate", (event) => {
+    //     giscusCallback();
+    // });
 
 </script>
