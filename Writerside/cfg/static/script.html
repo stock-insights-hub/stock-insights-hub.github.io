@@ -6,7 +6,7 @@
 
     $(function(){
         intervalSubject = setInterval(subjectCallback, 300);
-        // intervalGiscus = setInterval(giscusCallback, 300);
+        intervalGiscus = setInterval(giscusCallback, 300);
     });
     function subjectCallback(){
         if($(".wh-header__divider") != null && $(".wh-header__divider").length != 0){
@@ -16,31 +16,36 @@
     }
     function giscusCallback(){
         if($(".article") != null && $(".article").length != 0 && $(".article .giscus").length == 0){
-            $(".article").append($(".giscus").eq(0).clone());
-            $(".giscus").eq(0).css("display","none");
-            $(".article .giscus").css("display","block");
+            var scriptElement = document.createElement("script");
+            $(scriptElement).attr("id","giscus-script");
+            $(scriptElement).attr("data-repo","https://giscus.app/client.js");
+            $(scriptElement).attr("data-repo-id","R_kgDONTEm1w");
+            $(scriptElement).attr("data-category","General");
+            $(scriptElement).attr("data-category-id","DIC_kwDONTEm184CkkmL");
+            $(scriptElement).attr("data-mapping", "url");
+            $(scriptElement).attr("data-strict", "0");
+            $(scriptElement).attr("data-reactions-enabled", "1");
+            $(scriptElement).attr("data-emit-metadata", "0");
+            $(scriptElement).attr("data-input-position", "bottom");
+            $(scriptElement).attr("data-theme","preferred_color_scheme");
+            $(scriptElement).attr("data-lang","ko");
+            $(scriptElement).attr("data-loading","lazy");
+            $(scriptElement).attr("crossorigin","anonymous");
+
+            $("#giscus-script").remove();
+            $(".article").append('<div class="giscus"></div>');
+
+            setTimeout(function(){
+                $(".article").append($(scriptElement));
+            },300);
+
+
             clearInterval(intervalGiscus);
         }
     }
 
     window.navigation.addEventListener("navigate", (event) => {
-        // giscusCallback();
+        giscusCallback();
     });
 
 </script>
-<!--<script src="https://giscus.app/client.js"
-        data-repo="rundevelrun/rundevelrun.github.io"
-        data-repo-id="R_kgDONTEm1w"
-        data-category="General"
-        data-category-id="DIC_kwDONTEm184CkkmM"
-        data-mapping="url"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="ko"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>-->
