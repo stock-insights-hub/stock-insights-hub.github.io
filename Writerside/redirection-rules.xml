@@ -98,4 +98,12 @@
         <description>Created after removal of "Innotek" from RUN:DEVEL:RUN</description>
         <accepts>Innotek.html</accepts>
     </rule>
+    <rule id="40cda82e">
+        <description>Created after removal of "comment-giscus" from RUN:DEVEL:RUN</description>
+        <accepts>comment-giscus.html</accepts>
+    </rule>
+    <rule id="567ab4eb">
+        <description>Created after removal of "Amazon Linux에 Nexus 설치하기" from RUN:DEVEL:RUN</description>
+        <accepts>Amazon-Linux에-Nexus-설치하기.html</accepts>
+    </rule>
 </rules>

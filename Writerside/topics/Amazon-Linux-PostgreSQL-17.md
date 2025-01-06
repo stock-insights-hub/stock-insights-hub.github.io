@@ -49,7 +49,7 @@ sudo make
 sudo make install
 ```
 
-## 🏃 실행
+## 💿 실행
 
 ### ***설치 폴더 소유권 변경***
 PostgreSQL은 sudo 권한으로 실행시 오류가 발생하기 떄문에 설치된 폴더의 소유권을 변경해준다.
