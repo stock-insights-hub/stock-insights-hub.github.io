@@ -28,6 +28,9 @@
         <toc-element topic="Docker.md" target-for-accept-web-file-names="">
             <toc-element topic="Docker-Root-Directory-Change.md"/>
         </toc-element>
+        <toc-element topic="SonarQube.md" target-for-accept-web-file-names="">
+            <toc-element topic="Amazon-Linux-SonarQube-Install.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="OS.md" target-for-accept-web-file-names="">
         <toc-element topic="Linux.md" target-for-accept-web-file-names="">
