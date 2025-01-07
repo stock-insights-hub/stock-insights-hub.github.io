@@ -94,5 +94,4 @@ Property 'refs' is missing in type 'Slider' but required in type 'Component<any,
 ## 👋 마치며
 별게 다 속을 썩인다.
 
-
-
+<inline-frame src="static/giscus.html"/>
