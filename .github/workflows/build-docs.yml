@@ -71,6 +71,9 @@ jobs:
       - name: HTML Locale
         run: cd dir && sed -i -e 's#en-US#ko-KR#g' *.html
 
+      - name: TEST !!!
+        run: ls -al && cd dir/static && ls -al
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
