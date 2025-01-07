@@ -55,4 +55,4 @@
 ## 👋 마치며
 D2Coding을 사용하면 개발을 하면서 구분하지 못하는 문자가 없어져서 좋은데 개발 블로그를 운영할때도 좋은 것 같다.
 
-<inline-frame src="static/giscus.html"/>
+<p/>
