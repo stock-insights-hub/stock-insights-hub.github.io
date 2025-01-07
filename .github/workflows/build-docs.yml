@@ -68,9 +68,6 @@ jobs:
       - name: HTML Locale
         run: cd dir && sed -i -e 's#en-US#ko-KR#g' *.html
 
-      - name: static
-        run: cd dir && mkdir static && cd static && wget https://github.com/rundevelrun/rundevelrun.github.io/raw/refs/heads/main/Writerside/cfg/static/giscus.html
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

@@ -101,4 +101,4 @@ application-port=9000
 
 ## 👋
 
-<inline-frame src="static/giscus.html" width="100%"/>
+<inline-frame src="https://github.com/rundevelrun/rundevelrun.github.io/raw/refs/heads/main/Writerside/cfg/static/giscus.html" width="100%"/>
