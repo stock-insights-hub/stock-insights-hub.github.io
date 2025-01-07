@@ -155,4 +155,4 @@ sudo sysctl -w vm.max_map_count=262144
 ## 👋
 다음 포스팅은 Jenkins 파이프라인에서 SonarQube를 활용한 정적 코드 분석을 해봐야겠다.
 
-<inline-frame src="https://github.com/rundevelrun/rundevelrun.github.io/raw/refs/heads/main/Writerside/cfg/static/giscus.html" width="100%"/>
+<inline-frame src="static/giscus.html" width="100%"/>
