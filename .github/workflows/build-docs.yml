@@ -71,8 +71,11 @@ jobs:
       - name: HTML Locale
         run: cd dir && sed -i -e 's#en-US#ko-KR#g' *.html
 
-      - name: TEST !!!
-        run: cd dir && ls -al && cd dir/static && ls -al
+      - name: TEST 1 !!!
+        run: cd dir/YT-Wiki && ls -al
+
+      - name: TEST 2 !!!
+        run: cd dir/resources && ls -al
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
