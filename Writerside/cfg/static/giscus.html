@@ -1,7 +1,12 @@
-<title></title>
-<script>
-    document.title = parent.document.title;
-</script>
+<head>
+    <title></title>
+    <script>
+        document.title = parent.document.title;
+    </script>
+    <style>
+    </style>
+</head>
+<body>
 <script src="https://giscus.app/client.js"
         data-repo="rundevelrun/rundevelrun.github.io"
         data-repo-id="R_kgDONTEm1w"
@@ -10,11 +15,30 @@
         data-mapping="title"
         data-strict="0"
         data-reactions-enabled="1"
-        data-emit-metadata="0"
+        data-emit-metadata="1"
         data-input-position="bottom"
         data-theme="preferred_color_scheme"
         data-lang="ko"
-        data-loading="lazy"
         crossorigin="anonymous"
         async>
 </script>
+<script>
+    // Listen to messages
+    window.addEventListener('message', function(event){
+        if(
+            event == undefined ||
+            event.data == undefined ||
+            event.data.giscus == undefined ||
+            event.data.giscus.resizeHeight == undefined ||
+            event.data.giscus.resizeHeight == 0){
+            return;
+        }
+        document.getElementsByTagName("iframe")[0].height = event.data.giscus.resizeHeight;
+
+        console.log(window.parent.document.getElementsByTagName("iframe"));
+
+        parent.document.getElementsByTagName("iframe")[1].height = event.data.giscus.resizeHeight + 50;
+
+    });
+</script>
+</body>

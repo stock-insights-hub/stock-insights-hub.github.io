@@ -157,4 +157,4 @@ sudo systemctl daemon-reload
 
 ## 👋
 
-<inline-frame src="static/giscus.html"/>
+<inline-frame src="static/giscus.html" width="100%"/>

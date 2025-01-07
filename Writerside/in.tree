@@ -43,12 +43,12 @@
     </toc-element>
     <toc-element topic="Tools.md" target-for-accept-web-file-names="">
         <toc-element topic="IntelliJ.md" target-for-accept-web-file-names="">
+            <toc-element topic="intellij-vo-mybatis-xml.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Blogging.md"
                  target-for-accept-web-file-names="">
         <toc-element topic="github-pages.md" target-for-accept-web-file-names="">
-            <toc-element topic="intellij-vo-mybatis-xml.md"/>
             <toc-element topic="github-pages-start.md"/>
             <toc-element topic="github-pages-personal-domain.md"/>
         </toc-element>
