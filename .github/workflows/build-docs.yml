@@ -75,7 +75,7 @@ jobs:
         run: cd dir/YT-Wiki && ls -al
 
       - name: TEST 2 !!!
-        run: cd dir/resources && ls -al
+        run: cd dir && mkdir static && mv YT-Wiki/giscus.png static/giscus.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
