@@ -115,3 +115,4 @@ public class ScheduledComponent {
 
 ## 👋
 
+<inline-frame src="static/giscus.html" width="100%" height="100px"/>
