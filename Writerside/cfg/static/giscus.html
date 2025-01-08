@@ -4,7 +4,8 @@
     <script>
         document.title = parent.document.title;
         var link = document.querySelector("link");
-        link.setAttribute("href", parent.location.href);
+        link.setAttribute("rel", "canonical");
+        link.setAttribute("href", parent.location.origin + parent.location.pathname);
     </script>
     <style>
     </style>
