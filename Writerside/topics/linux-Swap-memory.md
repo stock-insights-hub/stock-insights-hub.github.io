@@ -109,4 +109,4 @@ vi /etc/fstab
 ## 👋 마치며
 Windows 10 Pro 환경에서 WSL을 활성화하고 CentOS 8을 설치해봤는데 생각보다 안정적이지 못한 느낌이 든다. 연습장으로 사용할 다른 대안을 찾아봐야겠다.
 
-<inline-frame src="static/giscus.html" width="100%"/>
+<inline-frame src="https://rundevelrun.6developer.com/static/giscus.html" width="100%"/>

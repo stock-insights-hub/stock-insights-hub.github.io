@@ -39,4 +39,4 @@
 Writerside를 이용해서 포스팅을 이어가고 있는데 아직 카테고리 구성이나 상위메뉴, 메인페이지 등을 어떻게 구성할지 감이 안잡힌다.
 하나씩 보완해가면서 구성해야겠다.
 
-<inline-frame src="static/giscus.html" width="100%"/>
+<inline-frame src="https://rundevelrun.6developer.com/static/giscus.html" width="100%"/>
