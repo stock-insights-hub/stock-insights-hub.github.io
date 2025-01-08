@@ -101,4 +101,3 @@ application-port=9000
 
 ## 👋
 
-<inline-frame src="https://rundevelrun.6developer.com/static/giscus.html" width="100%"/>

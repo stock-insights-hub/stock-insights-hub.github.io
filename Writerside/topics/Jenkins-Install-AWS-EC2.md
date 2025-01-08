@@ -157,4 +157,3 @@ sudo systemctl daemon-reload
 
 ## 👋
 
-<inline-frame src="https://rundevelrun.6developer.com/static/giscus.html" width="100%"/>

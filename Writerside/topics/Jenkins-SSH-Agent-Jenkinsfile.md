@@ -126,4 +126,3 @@ pipeline {
 ## 👋 마치며
 Jenkins Node Agent를 사용해서 원격 서버에 배포하는 방식을 기록해봤는데 곧  _SSH Agent_ 를 활용하는 방법도 기록해야겠다.
 
-<inline-frame src="https://rundevelrun.6developer.com/static/giscus.html" width="100%"/>

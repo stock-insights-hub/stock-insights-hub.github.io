@@ -51,4 +51,3 @@ where datname = '_YOUR_DATABASE_NAME_';
 
 ## 👋
 
-<inline-frame src="https://rundevelrun.6developer.com/static/giscus.html" width="100%"/>

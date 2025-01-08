@@ -110,4 +110,3 @@ Docker Root Dir: /data/docker
 
 ## 👋
 
-<inline-frame src="https://rundevelrun.6developer.com/static/giscus.html" width="100%"/>
