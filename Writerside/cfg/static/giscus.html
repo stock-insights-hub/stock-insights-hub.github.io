@@ -1,6 +1,5 @@
 <head>
     <link rel="canonical" href=""/>
-    <meta name="giscus:backlink" content="https://naver.com">
     <title></title>
     <script>
         document.title = parent.document.title;
@@ -28,6 +27,8 @@
         async>
 </script>
 <script>
+    document.querySelector('iframe.giscus-frame').src = document.querySelector('iframe.giscus-frame').src.replace('%2Fstatic%2Fgiscus.html', encodeURIComponent(parent.location.pathname));
+
     // Listen to messages
     window.addEventListener('message', function(event){
         if(
@@ -41,32 +42,7 @@
         document.getElementsByTagName("iframe")[0].height = event.data.giscus.resizeHeight;
         parent.document.getElementsByTagName("iframe")[1].height = event.data.giscus.resizeHeight + 50;
     });
-    function sendIframeMessage(){
-        iframe = document.querySelector('iframe.giscus-frame')
-    }
 </script>
-<script>
-    window.onload = function() {
-        // 스크립트 태그 생성
-        const script = document.createElement('script');
-        script.src = "https://giscus.app/client.js";
-        script.setAttribute('data-repo', "rundevelrun/rundevelrun.github.io");
-        script.setAttribute('data-repo-id', "R_kgDONTEm1w");
-        script.setAttribute('data-category', "Announcements");
-        script.setAttribute('data-category-id', "DIC_kwDONTEm184CkkmL");
-        script.setAttribute('data-mapping', "title");
-        script.setAttribute('data-strict', "0");
-        script.setAttribute('data-reactions-enabled', "1");
-        script.setAttribute('data-emit-metadata', "1");
-        script.setAttribute('data-input-position', "bottom");
-        script.setAttribute('data-theme', "preferred_color_scheme");
-        script.setAttribute('data-lang', "ko");
-        script.setAttribute('crossorigin', "anonymous");
-        script.async = true;
 
-        // 문서의 <body>에 스크립트 추가
-        document.body.appendChild(script);
-    };
-</script>
 </body>
 <!-- <inline-frame src="static/giscus.html" width="100%" height="100px"/> -->
