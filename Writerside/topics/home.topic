@@ -5,8 +5,6 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="🏡" id="home" help-id="Home;index">
 
-    <no-index>true</no-index>
-
     <section-starting-page>
         <description>
             Software Architecture, Developer, 2013~
@@ -14,7 +12,7 @@
         <primary>
             <a href="spring-custom-annotation.md" type="development" summary="JAVA, Python, React...">Programming</a>
             <a href="postgre-session-kill.md" type="data" summary="PostgreSQL..">Database</a>
-            <a href="DevOps.md" type="network" summary="GitLab, Jenkins, CI/CD...">DevOps</a>
+            <a href="Jenkins-Install-AWS-EC2.md" type="network" summary="GitLab, Jenkins, CI/CD...">DevOps</a>
             <a href="linux-Swap-memory.md" type="server" summary="Linux, Windows">Operating System</a>
             <a href="intellij-vo-mybatis-xml.md" type="tools" summary="Jetbrains IntelliJ..">DevTools</a>
             <a href="github-pages-start.md" type="idea" summary="Github Pages, Writerside...">Blogging</a>
