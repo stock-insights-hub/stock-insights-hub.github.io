@@ -5,11 +5,3 @@
 * {
     font-family: d2coding !important;
 }
-
-.giscus {
-    width: 100%;
-}
-@media (max-width: 600px) {
-#custom-subject {
-    display:none;
-}
