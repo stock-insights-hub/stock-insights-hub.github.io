@@ -68,12 +68,12 @@ jobs:
       - name: HTML Locale
         run: cd dir && sed -i -e 's#en-US#ko-KR#g' *.html
 
-      - name: Set Giscus in HTML 1
-        run: cd dir && sed -i -e 's#</article>#<script_SPACE_src="https://giscus.app/client.js"_SPACE_data-repo="rundevelrun/rundevelrun.github.io"_SPACE_data-repo-id="R_kgDONTEm1w"_SPACE_data-category="Announcements"_SPACE_data-category-id="DIC_kwDONTEm184CkkmL"_SPACE_data-mapping="title"_SPACE_data-strict="0"_SPACE_data-reactions-enabled="1"_SPACE_data-emit-metadata="1"_SPACE_data-input-position="bottom"_SPACE_data-theme="preferred_color_scheme"_SPACE_data-lang="ko"_SPACE_crossorigin="anonymous"_SPACE_async=""></script></article>#g' *.html
-
-      - name: Set Giscus in HTML 2
-        run: cd dir && sed -i -e 's/_SPACE_/ /g' *.html
-
+#      - name: Set Giscus in HTML 1
+#        run: cd dir && sed -i -e 's#</article>#<iframe_SPACE_src="/static/giscus.html"_SPACE_class="h2-related"_SPACE_style="width:_SPACE_100%;"></iframe></article>#g' *.html
+#
+#      - name: Set Giscus in HTML 2
+#        run: cd dir && sed -i -e 's/_SPACE_/ /g' *.html
+#
 #      - name: Add Giscus Script
 #        run: cd dir && mkdir static && cd static && wget https://js.6developer.com/writerside/giscus.html
 
