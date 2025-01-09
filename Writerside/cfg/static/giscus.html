@@ -1,48 +1,23 @@
-<head>
-    <link rel="canonical" href=""/>
-    <title></title>
     <script>
-        document.title = parent.document.title;
-        var link = document.querySelector("link");
-        link.setAttribute("rel", "canonical");
-        link.setAttribute("href", parent.location.pathname);
+        window.onload = function() {
+           // 스크립트 태그 생성
+           const script = document.createElement('script');
+           script.src = "https://giscus.app/client.js";
+           script.setAttribute('data-repo', "rundevelrun/rundevelrun.github.io");
+           script.setAttribute('data-repo-id', "R_kgDONTEm1w");
+           script.setAttribute('data-category', "Announcements");
+           script.setAttribute('data-category-id', "DIC_kwDONTEm184CkkmL");
+           script.setAttribute('data-mapping', "title");
+           script.setAttribute('data-strict', "0");
+           script.setAttribute('data-reactions-enabled', "1");
+           script.setAttribute('data-emit-metadata', "1");
+           script.setAttribute('data-input-position', "bottom");
+           script.setAttribute('data-theme', "preferred_color_scheme");
+           script.setAttribute('data-lang', "ko");
+           script.setAttribute('crossorigin', "anonymous");
+           script.async = true;
+
+       // 문서의 <body>에 스크립트 추가
+       parent.document.getElementsByTagName("article")[0].appendChild(script);
+   };
     </script>
-    <style>
-    </style>
-</head>
-<body>
-<script src="https://giscus.app/client.js"
-        data-repo="rundevelrun/rundevelrun.github.io"
-        data-repo-id="R_kgDONTEm1w"
-        data-category="Announcements"
-        data-category-id="DIC_kwDONTEm184CkkmL"
-        data-mapping="title"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="ko"
-        crossorigin="anonymous"
-        async>
-</script>
-<script>
-    document.querySelector('iframe.giscus-frame').src = document.querySelector('iframe.giscus-frame').src.replace('%2Fstatic%2Fgiscus.html', encodeURIComponent(parent.location.pathname));
-
-    // Listen to messages
-    window.addEventListener('message', function(event){
-        if(
-            event == undefined ||
-            event.data == undefined ||
-            event.data.giscus == undefined ||
-            event.data.giscus.resizeHeight == undefined ||
-            event.data.giscus.resizeHeight == 0){
-            return;
-        }
-        document.getElementsByTagName("iframe")[0].height = event.data.giscus.resizeHeight;
-        parent.document.getElementsByTagName("iframe")[1].height = event.data.giscus.resizeHeight + 50;
-    });
-</script>
-
-</body>
-<!-- <inline-frame src="static/giscus.html" width="100%" height="100px"/> -->
