@@ -9,7 +9,7 @@
 .giscus {
     width: 100%;
 }
-@media (max-width: 640px) {
+@media (max-width: 600px) {
 #custom-subject {
     display:none;
 }
