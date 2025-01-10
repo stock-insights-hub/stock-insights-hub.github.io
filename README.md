@@ -1,1 +1,1 @@
-[RUN:DEVERL:RUN](https://rundevelrun.6developer.com)
+[RUN:DEVERL:RUN](https://6developer.com)

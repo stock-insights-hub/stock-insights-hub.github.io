@@ -7,7 +7,7 @@
         <include-after-body>static/after-body.html</include-after-body>
         <include-before-body>static/before-body.html</include-before-body>
         <include-in-head>static/in-head.html</include-in-head>
-        <web-root>https://rundevelrun.6developer.com/</web-root>
+        <web-root>https://6developer.com/</web-root>
         <custom-favicons>favicon.ico</custom-favicons>
         <analytics-head-script-file>static/analytics-head.html</analytics-head-script-file>
         <analytics-body-html-file>static/analytics-body.html</analytics-body-html-file>

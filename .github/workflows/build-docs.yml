@@ -54,13 +54,13 @@ jobs:
         run: unzip -O UTF-8 -qq '${{ env.ARTIFACT }}' -d dir
 
       - name: Naver Search Advisor 1
-        run: cd dir && touch naver92825af1abbb23b37af4d3588f7f08e6.html && echo "naver-site-verification:_SPACE_naver92825af1abbb23b37af4d3588f7f08e6.html" >> naver92825af1abbb23b37af4d3588f7f08e6.html
+        run: cd dir && touch naverc469eac297957c3940ceb08660daee89.html && echo "naver-site-verification:_SPACE_naverc469eac297957c3940ceb08660daee89.html" >> naverc469eac297957c3940ceb08660daee89.html
 
       - name: Naver Search Advisor 2
-        run: cd dir && sed -i -e 's/_SPACE_/ /g' naver92825af1abbb23b37af4d3588f7f08e6.html
+        run: cd dir && sed -i -e 's/_SPACE_/ /g' naverc469eac297957c3940ceb08660daee89.html
 
       - name: Create robots.txt 1
-        run: cd dir && touch robots.txt && echo "User-agent:_SPACE_*" >> robots.txt && echo "Allow:_SPACE_/" >> robots.txt && echo "Sitemap:_SPACE_https://rundevelrun.6developer.com/sitemap.xml" >> robots.txt
+        run: cd dir && touch robots.txt && echo "User-agent:_SPACE_*" >> robots.txt && echo "Allow:_SPACE_/" >> robots.txt && echo "Sitemap:_SPACE_https://6developer.com/sitemap.xml" >> robots.txt
 
       - name: Create robots.txt 2
         run: cd dir && sed -i -e 's/_SPACE_/ /g' robots.txt

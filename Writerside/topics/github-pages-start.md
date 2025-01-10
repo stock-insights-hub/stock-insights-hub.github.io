@@ -18,7 +18,7 @@
 ### ***정보 입력 및 생성***
 1. Repository name
     - <shortcut>계정ID.github.io</shortcut> 입력시 `https://계정ID.github.io`로 접속
-    - 그 외 <shortcut>xxxxx</shortcut> 입력시 [사용자 정의 도메인 설정](https://rundevelrun.6developer.com/github-pages-personal-domain.html) 필요
+    - 그 외 <shortcut>xxxxx</shortcut> 입력시 [사용자 정의 도메인 설정](https://6developer.com/github-pages-personal-domain.html) 필요
 2. Add a README file 체크
     - *README.md*의 내용이 초기 화면으로 표시 
 ![](20241127_164354.png)

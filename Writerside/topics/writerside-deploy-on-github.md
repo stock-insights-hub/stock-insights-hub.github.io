@@ -2,7 +2,7 @@
 
 > ***사전 준비***
 > 
-> 1. Github Page 생성 ([Github Page 시작하기](https://rundevelrun.6developer.com/github-pages-start.html))
+> 1. Github Page 생성 ([Github Page 시작하기](https://6developer.com/github-pages-start.html))
 > 2. [Writerside](https://www.jetbrains.com/ko-kr/writerside/)
 >  - 문서 작성자를 위해, 문서 작성자가 만들었다는 Jetbrains의 문서 작성 도구
 >  - 필자는 Jetbrains의 신봉자로서 Writerside를 이용해서 현재 페이지를 운영중이다.
