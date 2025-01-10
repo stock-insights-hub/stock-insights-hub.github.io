@@ -22,28 +22,5 @@
             parent.document.getElementsByTagName("article")[0].appendChild(script);
         }, 2000);
 
-        // 광고 스크립트 추가
-        var adsScript = document.createElement('script');
-        adsScript.async = true;
-        adsScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798";
-        adsScript.setAttribute('crossorigin', 'anonymous');
-        parent.document.getElementsByTagName("article")[0].appendChild(script);
-
-        // 광고 인서트 요소 생성
-        var ins = document.createElement('ins');
-        ins.className = "adsbygoogle";
-        ins.style.display = "block";
-        ins.setAttribute('data-ad-client', "ca-pub-2327476184552798");
-        ins.setAttribute('data-ad-slot', "6675296002");
-        ins.setAttribute('data-ad-format', "auto");
-        ins.setAttribute('data-full-width-responsive', "true");
-
-        // 광고 컨테이너에 광고 요소 추가
-        parent.document.getElementsByTagName("article")[0].appendChild(ins);
-
-        // 광고 요청
-        (adsbygoogle = parent.adsbygoogle || []).push({});
-
-
     };
 </script>
