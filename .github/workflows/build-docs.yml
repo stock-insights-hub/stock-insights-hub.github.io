@@ -65,6 +65,12 @@ jobs:
       - name: Create robots.txt 2
         run: cd dir && sed -i -e 's/_SPACE_/ /g' robots.txt
 
+      - name: Create ads.txt 1
+        run: cd dir && touch ads.txt && echo "google.com,_SPACE_pub-2327476184552798,_SPACE_DIRECT,_SPACE_f08c47fec0942fa0" >> ads.txt
+
+      - name: Create ads.txt 2
+        run: cd dir && sed -i -e 's/_SPACE_/ /g' ads.txt
+
       - name: HTML Locale
         run: cd dir && sed -i -e 's#en-US#ko-KR#g' *.html
 
