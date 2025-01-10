@@ -33,6 +33,7 @@
         </toc-element>
         <toc-element topic="Nexus.md"  target-for-accept-web-file-names="">
             <toc-element topic="Amazon-Linux-Nexus-install.md"/>
+            <toc-element topic="Nexus-Connect-AWS-S3.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="OS.md" target-for-accept-web-file-names="">

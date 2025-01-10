@@ -6,10 +6,10 @@
 >
 > OpenJDK 17.0.2
 > 
-> Nexus3.75.1-01
+> Nexus 3.75.1-01
 
 ## ✋ 넥서스란?
-> Nexus는 Sonartype에서 만든 Repository Manager 솔루션이다. Node 기반의 Package나 Gradle, Maven 기반의 Library 등 다양한 Format의 저장소를 지원한다.
+Nexus는 Sonartype에서 만든 Repository Manager 솔루션이다. Node 기반의 Package나 Gradle, Maven 기반의 Library 등 다양한 Format의 저장소를 지원한다.
 
 ## 🚀 Nexus 다운로드 및 설치
 
