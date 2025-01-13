@@ -75,7 +75,7 @@ jobs:
         run: cd dir && sed -i -e 's#en-US#ko-KR#g' *.html
 
       - name: Set Giscus in HTML 1
-        run: cd dir && sed -i -e 's#</article>#<iframe_SPACE_id="giscusframe"_SPACE_src="/static/giscus.html"_SPACE_class="h2-related"_SPACE_style="width:_SPACE_100%;height:_SPACE_0px;"></iframe></article>#g' *.html
+        run: cd dir && sed -i -e 's#</article>#<div_SPACE_id="adsense"></div><iframe_SPACE_id="giscusframe"_SPACE_src="/static/giscus.html"_SPACE_class="h2-related"_SPACE_style="width:_SPACE_100%;height:_SPACE_0px;"></iframe></article>#g' *.html
 
       - name: Set Giscus in HTML 2
         run: cd dir && sed -i -e 's/_SPACE_/ /g' *.html
