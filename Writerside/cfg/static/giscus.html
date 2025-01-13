@@ -32,8 +32,12 @@
             '    (adsbygoogle = window.adsbygoogle || []).push({});\n' +
             '<\/script>';
 
+        const div = document.createElement('div');
+        div.setAttribute('class', "adsense");
+
         // 2초 후 댓글 기능 추가
         setTimeout(function () {
+            parent.document.getElementsByTagName("article")[0].appendChild(div);
             parent.document.getElementsByTagName("article")[0].getElementsByClassName("adsense")[0].innerHTML = adsense;
             parent.document.getElementsByTagName("article")[0].appendChild(script);
         }, 2000);
