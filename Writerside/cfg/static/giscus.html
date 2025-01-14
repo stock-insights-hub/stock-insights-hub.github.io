@@ -18,28 +18,8 @@
         script.setAttribute('crossorigin', "anonymous");
         script.async = true;
 
-        var adsense = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798"\n' +
-            '        crossorigin="anonymous"><\/script>';
-
-        adsense += '<ins class="adsbygoogle"\n' +
-            '     style="display:block"\n' +
-            '     data-ad-client="ca-pub-2327476184552798"\n' +
-            '     data-ad-slot="6675296002"\n' +
-            '     data-ad-format="auto"\n' +
-            '     data-full-width-responsive="true"><\/ins>';
-
-        adsense += '<script>\n' +
-            '    (adsbygoogle = window.adsbygoogle || []).push({});\n' +
-            '<\/script>';
-
-        const div = document.createElement('div');
-        div.setAttribute('class', "adsense");
-        div.setAttribute('style', "height: 100px; width: 100%; text-align: center;");
-
         // 2초 후 댓글 기능 추가
         setTimeout(function () {
-            parent.document.getElementsByTagName("article")[0].appendChild(div);
-            parent.document.getElementsByTagName("article")[0].getElementsByClassName("adsense")[0].innerHTML = adsense;
             parent.document.getElementsByTagName("article")[0].appendChild(script);
         }, 2000);
 
