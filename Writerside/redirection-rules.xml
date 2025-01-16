@@ -106,4 +106,12 @@
         <description>Created after removal of "Amazon Linux에 Nexus 설치하기" from RUN:DEVEL:RUN</description>
         <accepts>Amazon-Linux에-Nexus-설치하기.html</accepts>
     </rule>
+    <rule id="2de1c343">
+        <description>Created after removal of "Windows" from RUN:DEVEL:RUN</description>
+        <accepts>Windows.html</accepts>
+    </rule>
+    <rule id="2e78ab22">
+        <description>Created after removal of "AWS" from RUN:DEVEL:RUN</description>
+        <accepts>AWS.html</accepts>
+    </rule>
 </rules>

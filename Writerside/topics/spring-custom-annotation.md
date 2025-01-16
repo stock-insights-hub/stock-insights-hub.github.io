@@ -115,4 +115,3 @@ public class ScheduledComponent {
 
 ## 👋
 
-<inline-frame src="https://ads.6developer.com" width="100%"/>
