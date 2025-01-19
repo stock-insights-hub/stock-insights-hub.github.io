@@ -1,3 +1,0 @@
-# SonarQube
-
-Start typing here...

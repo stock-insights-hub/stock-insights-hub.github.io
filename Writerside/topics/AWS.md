@@ -1,3 +1,0 @@
-# AWS
-
-Start typing here...
