@@ -71,7 +71,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b gatsby"
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "repository": {
     "type": "git",
