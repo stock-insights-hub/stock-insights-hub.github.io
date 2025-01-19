@@ -1,27 +1,15 @@
-name: CI
+name: Gatsby Publish
 
 on:
-  pull_request:
+  push:
     branches:
-      - main
+      - gatsby
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v1
+      - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          node-version: 20.3.1
-
-      - name: Install node packages
-        run: yarn
-
-      - name: Check lint
-        run: yarn check:lint
-
-      - name: Check prettier
-        run: yarn check:prettier
-      
-      - name: Build
-        run: yarn build
+          deploy-branch: main
