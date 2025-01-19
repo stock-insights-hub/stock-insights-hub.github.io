@@ -1,16 +1,21 @@
-name: Gatsby Publish
+name: CI
 
 on:
-  push:
+  pull_request:
     branches:
-      - gatsby
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: enriikke/gatsby-gh-pages-action@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          deploy-branch: main
+          node-version: 20.3.1
+
+      - name: Install node packages
+        run: yarn
+
+      - name: Build
+        run: yarn build
