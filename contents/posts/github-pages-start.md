@@ -23,7 +23,7 @@ series: "📝 나만의 블로그를 운영하며"
 ### ***생성 메뉴 접속***
 *Profile ➡ Your repositories ➡ New*
 
-![](../images/20241127_172942.png)
+![](images/20241127_172942.png)
 
 ### ***정보 입력 및 생성***
 1. Repository name
@@ -32,21 +32,21 @@ series: "📝 나만의 블로그를 운영하며"
 2. Add a README file 체크
    - *README.md*의 내용이 초기 화면으로 표시
    
-      ![](../images/20241127_164354.png)
+      ![](images/20241127_164354.png)
 
 ### ***빌드 및 배포 설정***
 *Settings ➡ Pages*
 1. *Build and deployment*의 설정을 `GitHub Actions`로 변경
 2. 보고 있는 페이지는 *GitHub Action*을 이용해서 빌드와 배포가 이루어지는데 해당 내용을 포스팅 할 예정
 
-![](../images/20241128_083031.png)
+![](images/20241128_083031.png)
 
 ### ***접속 확인***
 *Settings ➡ Pages*
 1. 자신의 접속 도메인은 설정 페이지에서 확인하고 접속할 수 있다.
 2. `https://계정ID.github.io` 혹은 사용자 정의 도메인으로 접속
 
-![](../images/20241128_083702.png)
+![](images/20241128_083702.png)
 
 ## 👋 마치며
 Writerside를 이용해서 포스팅을 이어가고 있는데 아직 카테고리 구성이나 상위메뉴, 메인페이지 등을 어떻게 구성할지 감이 안잡힌다.

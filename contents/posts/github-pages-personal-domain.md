@@ -24,7 +24,7 @@ series: "📝 나만의 블로그를 운영하며"
 1. 호스팅 사이트마다 사용하는 방식은 다를 수 있지만 아래와 같이 4종류의 레코드를 등록한다.
 2. 필자는 A 레코드를 사용했지만 기호에 맞게 등록하기로 한다.
 
-   ![](../images/20241125_083158.png)
+   ![](images/20241125_083158.png)
 
 ## 🍨 Github 도메인 등록
 Github Pages를 운영중인 Repository에 도메인을 등록한다.
@@ -33,19 +33,19 @@ Github Pages를 운영중인 Repository에 도메인을 등록한다.
 *Settings ➡ Pages ➡ Custom domain*
 - DNS 레코드 설정을 마친 도메인을 입력한다.
 
-    ![](../images/20241125_082905.png)
+    ![](images/20241125_082905.png)
 
 ### ***Enforce HTTPS 설정***
 1. 도메인 등록이 완료되면 **약 15분 후** 체크박스가 활성화 된다.
 2. 항상 https로 접속하기 위해서 **Enforce HTTPS**에 꼭 체크해주자.
 
-   ![](../images/20241125_083307.png)
+   ![](images/20241125_083307.png)
 
 ### ***접속 확인***
 1. 등록한 도메인으로 접속하면 ~~*.github.io~~ 대신 도메인으로 접속이 되는걸 확인할 수 있다.
 2. ~~*.github.io~~ 접속시 등록한 도메인으로 redirect 된다.
 
-   ![](../images/20241125_134247.png)
+   ![](images/20241125_134247.png)
 
 ## 👋 마치며
 Jetbrains 신봉자인 내 눈 앞에 나타난 [Writerside↗](https://www.jetbrains.com/ko-kr/writerside/)로 기술블로그를 시작했다.

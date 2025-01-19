@@ -26,7 +26,7 @@ Github Pages에 정적 페이지를 빌드 후 배포하기 위해서는 Jenkins
 ### ***Workflows 파일 생성*** {id="workflows_1"}
 - _.github/workflows_ 아래 _build-docs.yml_ 파일을 생성한다.
 
-   ![](../images/20241205_163053.png)
+   ![](images/20241205_163053.png)
 
 ### ***Workflows 작성***
 - [공식 문서↗](https://www.jetbrains.com/help/writerside/deploy-docs-to-github-pages.html#build)를 보고 필요한 부분을 추리고 수정해서 아래와 같은 소스를 완성 했다.
@@ -118,7 +118,7 @@ on:
 - *Actions ➡ Build Number*
 - Github Page를 운영중인 Repository에서 배포 상태를 확인 할 수 있다.
 
-   ![](../images/20241205_165648.png)
+   ![](images/20241205_165648.png)
 
 ## 👋 마치며
 지금 보고 있는 이 사이트의 모든 소스는 [여기↗](https://github.com/rundevelrun/rundevelrun.github.io)에서 확인이 가능하다.
