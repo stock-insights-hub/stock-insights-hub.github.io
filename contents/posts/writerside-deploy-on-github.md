@@ -23,12 +23,12 @@ series: "📝 나만의 블로그를 운영하며"
 ## 📝 Github Actions Workflows 작성
 Github Pages에 정적 페이지를 빌드 후 배포하기 위해서는 Jenkins의 Pipeline과 같은 역할을 하는 Github Actions을 사용한다.
 
-### ***Workflows 파일 생성*** {id="workflows_1"}
+#### ***Workflows 파일 생성***
 - _.github/workflows_ 아래 _build-docs.yml_ 파일을 생성한다.
 
    ![](images/20241205_163053.png)
 
-### ***Workflows 작성***
+#### ***Workflows 작성***
 - [공식 문서↗](https://www.jetbrains.com/help/writerside/deploy-docs-to-github-pages.html#build)를 보고 필요한 부분을 추리고 수정해서 아래와 같은 소스를 완성 했다.
 - Job은 간단하게 Build, Deploy로 구성했다.
     ```yaml
@@ -102,7 +102,7 @@ Github Pages에 정적 페이지를 빌드 후 배포하기 위해서는 Jenkins
 
 ## 🚀 빌드 및 배포
 
-### ***배포 대상 브랜치 병합***
+#### ***배포 대상 브랜치 병합***
 - 위 소스를 그대로 사용하면 'main' branch에 변화(push or merge)가 생기면 빌드 및 배포가 실행된다.
 - 대상 브랜치를 변경하고 싶으면 소스의 아래 부분을 수정한다.
 ```yaml
@@ -114,7 +114,7 @@ on:
 ...
 ```
 
-### ***확인***
+#### ***확인***
 - *Actions ➡ Build Number*
 - Github Page를 운영중인 Repository에서 배포 상태를 확인 할 수 있다.
 

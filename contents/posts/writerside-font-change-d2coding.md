@@ -18,12 +18,12 @@ series: "📝 나만의 블로그를 운영하며"
 
 ## ✏️ StyleSheet
 
-### ***디렉토리 생성***
+#### ***디렉토리 생성***
 - _Writerside/cfg/static_ 경로에 준비한 글꼴 파일을 옮기고 CSS 파일을 생성한다.
 
    ![](images/20241209_132048.png)
 
-### ***CSS 작성***
+#### ***CSS 작성***
 - font-face를 설정하고 모든 elements 영역의 글꼴을 d2coding으로 설정.
   ```css
   @font-face {
@@ -37,7 +37,7 @@ series: "📝 나만의 블로그를 운영하며"
 
 ## 🛠️ Writerside buildprofiles 설정
 
-### ***Writerside/cfg/buildprofiles.xml***
+#### ***Writerside/cfg/buildprofiles.xml***
 - *buildprofiles ➡ variables ➡ custom-css* 영역에 생성한 CSS 파일명을 입력한다.
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
