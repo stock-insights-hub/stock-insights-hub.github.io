@@ -6,6 +6,7 @@ import useScroll from "hooks/useScroll"
 import getElementOffset from "utils/getElmentOffset"
 
 import RevealOnScroll from "components/RevealOnScroll"
+import { Helmet } from "react-helmet"
 
 const STICK_OFFSET = 100
 
@@ -120,6 +121,20 @@ const Toc = ({ items, articleOffset }) => {
             </ParagraphTitle>
           ))}
         </div>
+        <Helmet>
+          <script async
+                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798"
+                  crossOrigin="anonymous"></script>
+          <ins className="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-2327476184552798"
+               data-ad-slot="4877038723"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </Helmet>
       </TocWrapper>
     </RevealOnScroll>
   )
