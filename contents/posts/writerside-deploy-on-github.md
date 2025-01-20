@@ -1,5 +1,5 @@
 ---
-emoji: "🐳"
+emoji: "🛫"
 title: "Writerside Github에 배포하기"
 date: 2025-01-10 15:13:32 +0900
 update: 2025-01-10 15:13:32 +0900
