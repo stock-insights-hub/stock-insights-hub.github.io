@@ -4,8 +4,8 @@ title: "ERROR. 'Slider' cannot be used as a JSX component."
 date: 2025-01-20 14:12:00 +0900
 update: 2025-01-20 14:12:00 +0900
 tags:
-- react
-- error
+    - react
+    - error
 ---
 
 > ☀️ ***테스트 환경***
