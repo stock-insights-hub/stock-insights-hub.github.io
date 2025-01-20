@@ -43,7 +43,13 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme === "light" ? light : dark}>
       <GlobalStyles />
       <Header toggleTheme={toggleTheme} />
-      <Body>{children}</Body>
+      <Body>{children}
+        <Helmet>
+          <script async
+                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798"
+                  crossOrigin="anonymous"></script>
+        </Helmet>
+      </Body>
       <Footer />
     </ThemeProvider>
   )
