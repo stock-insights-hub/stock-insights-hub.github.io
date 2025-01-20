@@ -41,13 +41,6 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={theme === "light" ? light : dark}>
-      <Helmet>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798"
-          crossOrigin="anonymous"
-        ></script>
-      </Helmet>
       <GlobalStyles />
       <Header toggleTheme={toggleTheme} />
       <Body>{children}</Body>
