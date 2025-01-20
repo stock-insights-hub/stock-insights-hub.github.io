@@ -94,23 +94,23 @@ dr-xr-xr-x  22 root    root     314 Dec  5 04:53 ..
 
 #### ***Swap 영역 비활성화***
 스왑을 비활성화 해주고 생성했던 '/swapfile'을 삭제하면 다시 '0B'로 변한걸 확인할 수 있다.
-    ```shell
-    swapoff /swapfile
-    rm -rf /swapfile
-    free -h
-    ```
-    ```shell
-    ✔
-                  total        used        free      shared  buff/cache   available
-    Mem:            15G          0B          0B          0B          0B          0B
-    Swap:            0B          0B          0B
-    ```
+```shell
+swapoff /swapfile
+rm -rf /swapfile
+free -h
+```
+```shell
+✔
+              total        used        free      shared  buff/cache   available
+Mem:            15G          0B          0B          0B          0B          0B
+Swap:            0B          0B          0B
+```
 
 #### ***fstab 파티션 삭제***
 추가했던 UUID를 제거하면 Swap Memory 해제가 완료된다. 
-    ```shell
-    vi /etc/fstab
-    ```
+```shell
+vi /etc/fstab
+```
 
 
 ## 👋 마치며
