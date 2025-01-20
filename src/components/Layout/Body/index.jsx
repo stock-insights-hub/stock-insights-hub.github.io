@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Adsense from "../../Adsense"
 
 const BodyWrapper = styled.div`
   margin: 0 auto;
@@ -11,7 +12,7 @@ const BodyWrapper = styled.div`
 `
 
 const Body = ({ children }) => {
-  return <BodyWrapper>{children}</BodyWrapper>
+  return <BodyWrapper><Adsense/>{children}<Adsense/></BodyWrapper>
 }
 
 export default Body

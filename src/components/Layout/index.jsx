@@ -11,7 +11,6 @@ import GlobalStyles from "components/GlobalStyles"
 import Header from "./Header"
 import Body from "./Body"
 import Footer from "./Footer"
-import { Helmet } from "react-helmet"
 
 const Layout = ({ children }) => {
   const dispatch = useDispatch()
@@ -43,13 +42,7 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme === "light" ? light : dark}>
       <GlobalStyles />
       <Header toggleTheme={toggleTheme} />
-      <Body>{children}
-        <Helmet>
-          <script async
-                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798"
-                  crossOrigin="anonymous"></script>
-        </Helmet>
-      </Body>
+      <Body>{children}</Body>
       <Footer />
     </ThemeProvider>
   )
