@@ -1,8 +1,8 @@
 ---
 emoji: "🚘"
 title: "VO 및 Mybatis XML 자동 생성하기 (with. IntelliJ)"
-date: 2025-01-20 08:47:10
-update: 2025-01-20 08:47:10
+date: 2025-01-20 08:47:10 +0900
+update: 2025-01-20 08:47:10 +0900
 tags:
    - intellij
 ---
