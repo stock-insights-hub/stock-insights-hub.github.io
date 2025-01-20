@@ -4,10 +4,10 @@ title: "Amazon EC2에 S3 Bucket 연결 (AWS Console)"
 date: 2025-01-20 09:58:12 +0900
 update: 2025-01-20 09:58:12 +0900
 tags:
-  - github pages
-  - blog
-  - domain
-series: "📝 나만의 블로그를 운영하며"
+  - AWS
+  - EC2
+  - S3
+series: "📂 Presigned URL을 사용한 파일 업로드/다운로드"
 ---
 
 > ***테스트 환경***
