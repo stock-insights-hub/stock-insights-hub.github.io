@@ -5,7 +5,6 @@ const DisplayAds = () => {
     const pushAd = () => {
       try {
         const adsbygoogle = window.adsbygoogle
-        // console.log({ adsbygoogle })
         adsbygoogle.push({})
       } catch (e) {
         console.error(e)
@@ -27,7 +26,7 @@ const DisplayAds = () => {
   }, [])
   return (
     <ins className="adsbygoogle"
-         style="display:block"
+         style={{display: 'block'}}
          data-ad-client="ca-pub-2327476184552798"
          data-ad-slot="4877038723"
          data-ad-format="auto"

@@ -6,6 +6,7 @@ import useOffsetTop from "hooks/useOffsetTop"
 import Toc from "./Toc"
 import StyledMarkdown from "./StyledMarkdown"
 import PrismTheme from "./PrismTheme"
+import DisplayAds from "../../DisplayAd"
 
 const Wrapper = styled.div`
   position: relative;
@@ -34,13 +35,14 @@ const Body = ({ html, hideToc }) => {
       {hideToc || <Toc items={toc} articleOffset={offsetTop} />}
 
       <PrismTheme />
-
+      <DisplayAds />
       <StyledMarkdown
         id="article-body"
         dangerouslySetInnerHTML={{ __html: html }}
         itemProp="articleBody"
         ref={ref}
       />
+      <DisplayAds />
     </Wrapper>
   )
 }
