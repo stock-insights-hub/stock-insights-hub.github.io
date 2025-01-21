@@ -90,7 +90,7 @@ const SeriesList = ({ seriesList }) => {
               </SeriesInform>
             </SeriesWrapper>
             {
-              (i == 0 || i==2) && (
+              (i == 1 || i==3) && (
                 <DisplayAds />
               )
             }
