@@ -6,6 +6,7 @@ import useScroll from "hooks/useScroll"
 import getElementOffset from "utils/getElmentOffset"
 
 import RevealOnScroll from "components/RevealOnScroll"
+import DisplayAds from "../../../DisplayAd"
 
 const STICK_OFFSET = 100
 
@@ -119,6 +120,7 @@ const Toc = ({ items, articleOffset }) => {
               {item.innerText}
             </ParagraphTitle>
           ))}
+          <DisplayAds/>
         </div>
       </TocWrapper>
     </RevealOnScroll>
