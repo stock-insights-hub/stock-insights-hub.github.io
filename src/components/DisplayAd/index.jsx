@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { adsense } from "../../../blog-config"
 
 const DisplayAds = () => {
   useEffect(() => {
@@ -27,8 +28,8 @@ const DisplayAds = () => {
   return (
     <ins className="adsbygoogle"
          style={{display: 'block'}}
-         data-ad-client="ca-pub-2327476184552798"
-         data-ad-slot="4877038723"
+         data-ad-client={adsense.client}
+         data-ad-slot={adsense.slot}
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
   )

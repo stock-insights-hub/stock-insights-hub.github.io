@@ -33,7 +33,6 @@ const Body = ({ html, hideToc }) => {
   return (
     <Wrapper>
       {hideToc || <Toc items={toc} articleOffset={offsetTop} />}
-
       <PrismTheme />
       <DisplayAds />
       <StyledMarkdown
