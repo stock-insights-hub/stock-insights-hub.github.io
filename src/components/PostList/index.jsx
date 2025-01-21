@@ -94,7 +94,7 @@ const PostList = ({ postList }) => {
               <TagList tagList={tags} />
             </PostWrapper>
             {
-              i == 2 && (
+              (i == 0 || i==2) && (
                 <DisplayAds />
               )
             }
