@@ -1,5 +1,5 @@
 const blogConfig = require("./blog-config")
-const { title, description, author, siteUrl } = blogConfig
+const { title, description, author, siteUrl,adsense } = blogConfig
 
 module.exports = {
   pathPrefix: "/gatsby-starter-rundevelrun",
@@ -77,6 +77,12 @@ module.exports = {
               wrapperStyle: "margin-bottom: 16px;",
               quality: 100,
               showCaptions: true,
+            },
+          },
+          {
+            resolve: `gatsby-plugin-google-adsense`,
+            options: {
+              publisherId: `${adsense.client}`
             },
           },
           {
