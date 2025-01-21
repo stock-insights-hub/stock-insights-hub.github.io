@@ -1,5 +1,5 @@
 ---
-emoji: "🔗"
+emoji: "🔐"
 title: "SpringBoot에서 S3 Presigned URL 발급받기"
 date: 2025-01-21 13:28:00 +0900
 update: 2025-01-21 13:28:00 +0900

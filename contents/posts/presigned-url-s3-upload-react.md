@@ -1,6 +1,6 @@
 ---
-emoji: "🔗"
-title: "SpringBoot에서 S3 Presigned URL 발급받기"
+emoji: "⬆️"
+title: "React에서 S3 Presigned URL을 이용한 파일 업로드/다운로드"
 date: 2025-01-21 15:27:00 +0900
 update: 2025-01-21 15:27:00 +0900
 tags:
