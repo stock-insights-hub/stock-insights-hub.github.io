@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const Wrapper = styled.h1`
+const Wrapper = styled.h2`
   margin-bottom: 24px;
   font-size: ${props => props.size};
   font-weight: 700;
@@ -24,7 +24,7 @@ const Title = ({ size, children }) => {
   const sizes = {
     sm: "19.2px",
     md: "25.6px",
-    bg: "32px",
+    bg: "26px",
   }
 
   return <Wrapper size={sizes[size]}> {children} </Wrapper>
