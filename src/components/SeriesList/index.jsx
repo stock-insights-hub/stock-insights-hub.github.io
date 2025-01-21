@@ -6,6 +6,7 @@ import { Link } from "gatsby"
 
 import Title from "components/Title"
 import Divider from "components/Divider"
+import DisplayAds from "../DisplayAd"
 
 const SeriesListWrapper = styled.div`
   margin-bottom: 60px;
@@ -88,7 +89,11 @@ const SeriesList = ({ seriesList }) => {
                 <Date>Last updated on {series.lastUpdated}</Date>
               </SeriesInform>
             </SeriesWrapper>
-
+            {
+              (i == 0 || i==2) && (
+                <DisplayAds />
+              )
+            }
             {seriesCount - 1 !== i && seriesList.length - 1 !== i && (
               <Divider mt="48px" mb="32px" />
             )}
