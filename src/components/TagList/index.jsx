@@ -34,7 +34,8 @@ const TagLink = styled.div`
 `
 
 const spaceToDash = text => {
-  return text.replace(/\s+/g, "-")
+  return text
+  // return text.replace(/\s+/g, "-")
 }
 
 const TagList = ({ tagList, count, selected }) => {

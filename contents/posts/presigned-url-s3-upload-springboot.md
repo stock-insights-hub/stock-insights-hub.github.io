@@ -4,8 +4,8 @@ title: "SpringBoot에서 S3 Presigned URL 발급받기"
 date: 2025-01-21 13:28:00 +0900
 update: 2025-01-21 13:28:00 +0900
 tags:
-  - AWS
-  - S3
+  - aws
+  - s3
   - presigned-url
   - springboot
 series: "📂 AWS S3 Presigned URL 업로드/다운로드"

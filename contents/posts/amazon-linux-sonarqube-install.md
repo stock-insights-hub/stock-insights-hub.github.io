@@ -6,7 +6,7 @@ update: 2025-01-20 12:38:00 +0900
 tags:
   - aws
   - ec2
-  - amazon linux
+  - amazon-linux
   - sonarqube
 ---
 

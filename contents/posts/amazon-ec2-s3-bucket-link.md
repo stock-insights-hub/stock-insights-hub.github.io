@@ -4,9 +4,9 @@ title: "Amazon EC2에 S3 Bucket 연결 (AWS Console)"
 date: 2025-01-20 09:58:12 +0900
 update: 2025-01-20 09:58:12 +0900
 tags:
-  - AWS
-  - EC2
-  - S3
+  - aws
+  - ec2
+  - s3
 series: "📂 AWS S3 Presigned URL 업로드/다운로드"
 ---
 

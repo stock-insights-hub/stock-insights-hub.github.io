@@ -4,7 +4,7 @@ title: "Writerside Font 변경하기 (feat. D2Coding)"
 date: 2025-01-10 17:13:32 +0900
 update: 2025-01-10 17:13:32 +0900
 tags:
-   - github pages
+   - github-pages
    - blog
    - writerside
 series: "📝 나만의 블로그를 운영하며"

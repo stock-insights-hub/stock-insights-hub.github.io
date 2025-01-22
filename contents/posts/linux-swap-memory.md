@@ -5,7 +5,7 @@ date: 2025-01-20 09:37:42 +0900
 update: 2025-01-20 09:37:42 +0900
 tags:
    - linux
-   - swap memory
+   - swap-memory
 ---
 
 > ☀️ ***테스트 환경***

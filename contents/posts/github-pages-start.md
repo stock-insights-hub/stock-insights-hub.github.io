@@ -4,7 +4,7 @@ title: "Github Pages 시작하기"
 date: 2025-01-10 12:12:10 +0900
 update: 2025-01-10 12:12:10 +0900
 tags:
-   - github pages
+   - github-pages
    - blog
 series: "📝 나만의 블로그를 운영하며"
 ---

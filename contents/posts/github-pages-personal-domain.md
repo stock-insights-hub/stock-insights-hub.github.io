@@ -4,7 +4,7 @@ title: "Github Pages 사용자 정의 도메인 설정"
 date: 2025-01-10 13:11:12 +0900
 update: 2025-01-10 13:11:12 +0900
 tags:
-  - github pages
+  - github-pages
   - blog
   - domain
 series: "📝 나만의 블로그를 운영하며"
