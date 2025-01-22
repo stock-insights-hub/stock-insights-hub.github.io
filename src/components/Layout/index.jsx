@@ -40,10 +40,10 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={theme === "light" ? light : dark}>
-      <GlobalStyles />
       <Header toggleTheme={toggleTheme} />
       <Body>{children}</Body>
       <Footer />
+      <GlobalStyles />
     </ThemeProvider>
   )
 }
