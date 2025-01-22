@@ -7,6 +7,7 @@ tags:
   - aws
   - ec2
   - amazon-linux
+  - linux
   - nexus
 ---
 
