@@ -117,6 +117,7 @@ export const pageQuery = graphql`
           title
           tags
           emoji
+          series
         }
       }
     }

@@ -8,7 +8,7 @@ tags:
   - s3
   - presigned-url
   - springboot
-series: "📂 AWS S3 Presigned URL 업로드/다운로드"
+series: "📂 AWS S3 Presigned URL"
 ---
 
 > ☀️ ***테스트 환경***

@@ -11,13 +11,12 @@ import VerticalSpace from "components/VerticalSpace"
 
 import { title, description, siteUrl } from "../../blog-config"
 import Divider from "../components/Divider"
-import Bio from "../components/Bio"
 
 const SearchWrapper = styled.div`
-  margin-top: 20px;
-  @media (max-width: 768px) {
-    padding: 0 15px;
-  }
+    margin-top: 20px;
+    @media (max-width: 768px) {
+        padding: 0 15px;
+    }
 `
 
 const Search = ({ data }) => {
@@ -41,12 +40,10 @@ const Search = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} description={description} url={siteUrl} />
-      <VerticalSpace size={30} />
-      <Bio/>
-      <VerticalSpace size={30} />
+      <VerticalSpace size={10} />
       <SearchWrapper>
         <Badge badgeContent={filteredPosts.length} color="warning" max={99} showZero={true}
-        sx={{top:'5px', left: '2px'}}>
+               sx={{top:'5px', left: '2px'}}>
         </Badge>
         <TextField
           onChange={e => setQuery(e.target.value)}
@@ -77,7 +74,6 @@ export const pageQuery = graphql`
           title
           tags
           emoji
-          series
         }
         rawMarkdownBody
       }
