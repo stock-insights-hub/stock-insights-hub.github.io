@@ -48,6 +48,9 @@ const Post = ({ data }) => {
           <Article.Series header={series} series={filteredSeries} />
         )}
         <Article.Body html={post.html} />
+        {filteredSeries.length > 0 && (
+          <Article.Series header={series} series={filteredSeries} />
+        )}
         <Article.Footer previous={previous} next={next} />
       </Article>
     </Layout>
