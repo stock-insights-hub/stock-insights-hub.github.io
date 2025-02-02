@@ -11,7 +11,7 @@ series: "📝 나만의 블로그를 운영하며"
 ---
 
 ## ✋ 들어가며
-지금 보고있는 이 글의 시리즈에서 알 수 있듯이 얼마전까지는 Jetbrains에서 만든 문서도구인 [Writerside](https://www.jetbrains.com/ko-kr/writerside/)로 블로그를 운영했었는데 
+지금 보고있는 이 글의 시리즈에서 알 수 있듯이 얼마전까지는 Jetbrains에서 만든 문서도구인 [Writerside↗](https://www.jetbrains.com/ko-kr/writerside/)로 블로그를 운영했었는데 
 정말 좋은 도구임은 틀림 없지만 블로그와는 좀 맍지 않는 부분이 많이 있었다. (아마도 API 문서 등에 적합할 것 같다.)
 그리하여 Gatsby를 이용한 블로그를 만들게 되었다.
 
