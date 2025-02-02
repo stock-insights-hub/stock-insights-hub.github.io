@@ -35,6 +35,7 @@ const Body = ({ html, hideToc }) => {
       {hideToc || <Toc items={toc} articleOffset={offsetTop} />}
       <PrismTheme />
       <DisplayAds />
+      <br/>
       <StyledMarkdown
         id="article-body"
         dangerouslySetInnerHTML={{ __html: html }}
