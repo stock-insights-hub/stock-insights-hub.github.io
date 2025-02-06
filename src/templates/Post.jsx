@@ -7,7 +7,7 @@ import Article from "components/Article"
 
 import { siteUrl } from "../../blog-config"
 
-function replaceAds(post){
+/*function replaceAds(post){
   var html = post.html;
   html = html.replace(/<adsense><\/adsense>/g,'<!-- gatsby-reponsive-ads -->\n' +
     '<ins class="adsbygoogle"\n' +
@@ -17,7 +17,7 @@ function replaceAds(post){
     '     data-ad-format="auto"\n' +
     '     data-full-width-responsive="true"></ins>');
   return html;
-}
+}*/
 
 const Post = ({ data }) => {
   const post = data.markdownRemark
@@ -59,7 +59,7 @@ const Post = ({ data }) => {
         {filteredSeries.length > 0 && (
           <Article.Series header={series} series={filteredSeries} />
         )}
-        <Article.Body html={replaceAds(post)} />
+        <Article.Body html={post.html} />
         {filteredSeries.length > 0 && (
           <Article.Series header={series} series={filteredSeries} />
         )}
