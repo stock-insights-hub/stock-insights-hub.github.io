@@ -7,10 +7,8 @@ import Article from "components/Article"
 
 import { siteUrl } from "../../blog-config"
 
-function replaceAds(post){
-  var html = post.html;
-  html = html.replace(/<adsense><\/adsense>/g,'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798"\n' +
-    '     crossorigin="anonymous"></script>\n' +
+function replaceAds(html){
+  /*html = html.replace(/<adsense><\/adsense>/g,'' +
     '<ins class="adsbygoogle"\n' +
     '     style="display:block; text-align:center;"\n' +
     '     data-ad-layout="in-article"\n' +
@@ -19,7 +17,7 @@ function replaceAds(post){
     '     data-ad-slot="8895372459"></ins>\n' +
     '<script>\n' +
     '     (adsbygoogle = window.adsbygoogle || []).push({});\n' +
-    '</script>');
+    '</script>');*/
   return html;
 }
 
