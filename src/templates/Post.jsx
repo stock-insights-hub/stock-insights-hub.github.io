@@ -5,16 +5,17 @@ import { graphql } from "gatsby"
 import Layout from "components/Layout"
 import Article from "components/Article"
 
-import { adsense, siteUrl } from "../../blog-config"
+import { siteUrl } from "../../blog-config"
 
 function replaceAds(post){
   var html = post.html;
-  html = html.replace(/<adsense><\/adsense>/g,'<ins className="adsbygoogle"\n' +
-    '         style={{display: \'block\'}}\n' +
-    '         data-ad-client={adsense.client}\n' +
-    '         data-ad-slot={adsense.slot}\n' +
-    '         data-ad-format="auto"\n' +
-    '         data-full-width-responsive="true"></ins>');
+  html = html.replace(/<adsense><\/adsense>/g,'<!-- gatsby-reponsive-ads -->\n' +
+    '<ins class="adsbygoogle"\n' +
+    '     style="display:block"\n' +
+    '     data-ad-client="ca-pub-2327476184552798"\n' +
+    '     data-ad-slot="4877038723"\n' +
+    '     data-ad-format="auto"\n' +
+    '     data-full-width-responsive="true"></ins>');
   return html;
 }
 
