@@ -5,7 +5,18 @@ import { graphql } from "gatsby"
 import Layout from "components/Layout"
 import Article from "components/Article"
 
-import { siteUrl } from "../../blog-config"
+import { adsense, siteUrl } from "../../blog-config"
+
+function replaceAds(post){
+  var html = post.html;
+  html = html.replace(/<adsense><\/adsense>/g,'<ins className="adsbygoogle"\n' +
+    '         style={{display: \'block\'}}\n' +
+    '         data-ad-client={adsense.client}\n' +
+    '         data-ad-slot={adsense.slot}\n' +
+    '         data-ad-format="auto"\n' +
+    '         data-full-width-responsive="true"></ins>');
+  return html;
+}
 
 const Post = ({ data }) => {
   const post = data.markdownRemark
@@ -47,7 +58,7 @@ const Post = ({ data }) => {
         {filteredSeries.length > 0 && (
           <Article.Series header={series} series={filteredSeries} />
         )}
-        <Article.Body html={post.html} />
+        <Article.Body html={replaceAds(post)} />
         {filteredSeries.length > 0 && (
           <Article.Series header={series} series={filteredSeries} />
         )}

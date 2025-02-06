@@ -1,4 +1,3 @@
-import DisplayAd from "../../src/components/DisplayAd"
 ---
 emoji: "💾"
 title: "운전면허 학과시험 문제은행 DB 만들기 2"
@@ -69,8 +68,6 @@ String text = new PDFTextStripper().getText(doc);
 ```
 
 그래서 원하는 패턴이 아닌 경우를 찾아내는 검증 로직이 필요해졌다. (~~아 귀찮아~~)
-
-<DisplayAd/>
 
 ## 🔎 정형화되지 않은 패턴 찾기
 
@@ -156,6 +153,8 @@ if (line.contains("①") && line.contains("②")) {
 
 6LsRfvEAyS8BWCQ+8+kKDe8GQot9EJsMyQf3rpPqAXDC55z2+pIVsf0pKAM6cUbwS+8+kKDe8GQot9EJsMyQ...
 ```
+
+<adsense></adsense>
 
 ## 🖼️ 이미지와 동영상은 어떻게?
 
