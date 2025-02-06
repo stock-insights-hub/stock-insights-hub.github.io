@@ -7,17 +7,21 @@ import Article from "components/Article"
 
 import { siteUrl } from "../../blog-config"
 
-/*function replaceAds(post){
+function replaceAds(post){
   var html = post.html;
-  html = html.replace(/<adsense><\/adsense>/g,'<!-- gatsby-reponsive-ads -->\n' +
+  html = html.replace(/<adsense><\/adsense>/g,'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327476184552798"\n' +
+    '     crossorigin="anonymous"></script>\n' +
     '<ins class="adsbygoogle"\n' +
-    '     style="display:block"\n' +
+    '     style="display:block; text-align:center;"\n' +
+    '     data-ad-layout="in-article"\n' +
+    '     data-ad-format="fluid"\n' +
     '     data-ad-client="ca-pub-2327476184552798"\n' +
-    '     data-ad-slot="4877038723"\n' +
-    '     data-ad-format="auto"\n' +
-    '     data-full-width-responsive="true"></ins>');
+    '     data-ad-slot="8895372459"></ins>\n' +
+    '<script>\n' +
+    '     (adsbygoogle = window.adsbygoogle || []).push({});\n' +
+    '</script>');
   return html;
-}*/
+}
 
 const Post = ({ data }) => {
   const post = data.markdownRemark
@@ -59,7 +63,7 @@ const Post = ({ data }) => {
         {filteredSeries.length > 0 && (
           <Article.Series header={series} series={filteredSeries} />
         )}
-        <Article.Body html={post.html} />
+        <Article.Body html={replaceAds(post.html)} />
         {filteredSeries.length > 0 && (
           <Article.Series header={series} series={filteredSeries} />
         )}
