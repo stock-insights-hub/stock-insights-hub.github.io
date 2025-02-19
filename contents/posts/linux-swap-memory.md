@@ -86,7 +86,7 @@ dr-xr-xr-x  22 root    root     314 Dec  5 04:53 ..
     ```shell
     ✔
     ...
-    UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX /swapfile swap defaults 0 0
+    UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX swap swap defaults 0 0
     ```
 
 
