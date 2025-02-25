@@ -7,8 +7,7 @@ tags:
    - intellij
 ---
 
-> ☀️ ***테스트 환경***
-> <br/><br/>
+## ☀️ 테스트 환경
 > - IntelliJ IDEA 2024.3 (Ultimate Edition)
 >
 > - PostgreSQL 16.1 (Amazon Aurora)

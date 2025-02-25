@@ -11,8 +11,7 @@ tags:
   - postgresql
 ---
 
-> ☀️ ***테스트 환경***
-> <br/><br/>
+## ☀️ 테스트 환경
 > - Amazon Linux 2023 (EC2)
 > - PostgreSQL 17.2
 

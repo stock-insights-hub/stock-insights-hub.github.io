@@ -7,8 +7,7 @@ tags:
   - jenkins
 ---
 
-> ☀️ ***테스트 환경***
-> <br/><br/>
+## ☀️ 테스트 환경
 > - Jenkins 2.387.3
 > - Amazon Linux 2023 (EC2) 
 

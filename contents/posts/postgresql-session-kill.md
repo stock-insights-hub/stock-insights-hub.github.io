@@ -7,8 +7,7 @@ tags:
   - postgresql
 ---
 
-> ☀️ ***테스트 환경***
-> <br/><br/>
+## ☀️ 테스트 환경
 > - PostgreSQL 16.1 (Amazon Aurora)
 >   - [Amazon Aurora↗](https://docs.aws.amazon.com/ko_kr/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html)는 MySQL 및 PostgreSQL과 호환되는 완전 관리형 관계형 데이터베이스 엔진이다.
 

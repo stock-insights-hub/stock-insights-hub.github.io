@@ -8,8 +8,7 @@ tags:
    - swap-memory
 ---
 
-> ☀️ ***테스트 환경***
-> <br/><br/>
+## ☀️ 테스트 환경
 > - CentOS 8
 > - WSL (Windows 10 Pro)
 

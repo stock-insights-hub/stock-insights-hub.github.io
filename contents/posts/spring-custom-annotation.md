@@ -9,8 +9,7 @@ tags:
    - aop
 ---
 
-> ☀️ ***테스트 환경***
-> <br/><br/>
+## ☀️ 테스트 환경
 > - OpenJDK 17.0.2
 > - Gradle 8.0.2
 > - Spring Boot 3.0.5

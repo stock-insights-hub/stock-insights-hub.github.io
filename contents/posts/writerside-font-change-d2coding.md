@@ -10,10 +10,9 @@ tags:
 series: "📝 나만의 블로그를 운영하며"
 ---
 
+## ☀️ ***사전 준비***
 > ⚠️ 현재 'Writerside'를 사용하지 않고 있습니다.
 
-> ☀️ ***사전 준비***
-> <br/><br/>
 > ttf 확장자를 가진 폰트 파일 (현재 페이지에서는 네이버에서 만든 [D2Coding↗](https://github.com/naver/d2codingfont)을 사용)
 
 ## ✏️ StyleSheet
