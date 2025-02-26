@@ -10,9 +10,10 @@ tags:
 series: "📝 나만의 블로그를 운영하며"
 ---
 
-## ☀️ ***사전 준비***
+## 안내
 > ⚠️ 현재 'Writerside'를 사용하지 않고 있습니다.
 
+## ☀️ ***사전 준비***
 > 1. Github Page 생성 ([Github Pages 시작하기↗](https://6developer.com/github-pages-start.html))
 > 2. [Writerside↗](https://www.jetbrains.com/ko-kr/writerside/)
 >  - 문서 작성자를 위해, 문서 작성자가 만들었다는 Jetbrains의 문서 작성 도구
