@@ -32,6 +32,8 @@
     "gatsby-remark-footnotes": "^0.0.8",
     "gatsby-remark-images": "^7.11.0",
     "gatsby-remark-katex": "^3.5.0",
+    "gatsby-remark-mermaid": "^5.0.0",
+    "playwright": "^1.50.1",
     "gatsby-remark-prismjs": "^7.11.0",
     "gatsby-remark-reading-time": "^1.1.0",
     "gatsby-remark-static-images": "^1.2.1",
