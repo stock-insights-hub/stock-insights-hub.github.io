@@ -88,6 +88,12 @@ const Series = ({ header, series }) => {
   const [fold, setFold] = useState(true)
 
   const filteredPosts = useMemo(() => {
+
+    for(var i=0;i<series.length;i++){
+      series[i].idx = (i+1);
+    }
+
+
     if (series.length < 5) return series
     if (!fold) return series
 
@@ -115,7 +121,7 @@ const Series = ({ header, series }) => {
       <PostWrapper>
         {filteredPosts.map((post, i) => (
           <Post key={i} currentPost={post.currentPost}>
-            <Link to={post.fields.slug}>{(i+1) +".  " + post.frontmatter.title}</Link>{" "}
+            <Link to={post.fields.slug}>{(post.idx) +".  " + post.frontmatter.title}</Link>{" "}
             {post.currentPost && <AiOutlineArrowLeft />}{" "}
           </Post>
         ))}
