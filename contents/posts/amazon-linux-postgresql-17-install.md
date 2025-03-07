@@ -93,7 +93,7 @@ initdb -E utf-8 -D /postgresql-17.2/data
 
 #### ***실행 및 확인***
 ```Shell
-pg_ctl -D /engn001/postgresql-17.2/data start
+pg_ctl -D /postgresql-17.2/data start
 ```
 ```Shell
 psql -d postgres
