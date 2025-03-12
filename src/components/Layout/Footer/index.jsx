@@ -22,6 +22,9 @@ const FooterWrapper = styled.footer`
         text-align: right;
         float:right;
     }
+    & > div#themeby > a#link {
+        color: #ed6c02;
+    }
 
 `
 
@@ -30,9 +33,8 @@ const Footer = () => {
   return (
     <FooterWrapper>
         <div id={"themeby"}>
-          Theme by <a href="https://github.com/rundevelrun/gatsby-starter-rundevelrun" target="blank">
-          RUN:DEVEL:RUN
-        </a>
+          Theme by
+          <a id={"link"} href="https://github.com/rundevelrun/gatsby-starter-rundevelrun" target="blank">{" "}RUN:DEVEL:RUN</a>
           {" "}Built with Gatsby
         </div>
         <div id={"copyright"} dangerouslySetInnerHTML={{ __html: copyright }}></div>
