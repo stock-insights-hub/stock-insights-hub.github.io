@@ -1,5 +1,5 @@
 <h1 align="center">
-  RUN:<div style="color:#ed6c02">DEVEL</div>:RUN
+  RUN:DEVEL:RUN
 </h1>
 <div align="center">
 👋
