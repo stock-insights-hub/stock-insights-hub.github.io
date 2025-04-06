@@ -1,5 +1,5 @@
 ---
-emoji: 🧨
+emoji: "🧨"
 title: "Spring AOP + JWT logger NPE 수정"
 date: 2025-04-04 16:00:00 +0900
 update: 2025-04-04 16:00:00 +0900
