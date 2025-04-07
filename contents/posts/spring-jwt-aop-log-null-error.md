@@ -1,6 +1,6 @@
 ---
 emoji: "🧨"
-title: "Spring AOP + JWT logger NPE 수정"
+title: "Spring AOP + JWT logger is null 수정"
 date: 2025-04-04 16:00:00 +0900
 update: 2025-04-04 16:00:00 +0900
 tags:
@@ -17,7 +17,7 @@ tags:
 
 
 ## ✋ 들어가며
-JWT를 구현하는 중에 내장 톰캣이 시작되지 못했다는 아주 기분나쁜 에러를 만났다. `Unable to start embedded Tomcat`
+JWT를 구현하는 중에 내장 톰캣이 시작되지 못했다는 아주 기분나쁜 에러를 만났다. `"this.logger" is null`, `Unable to start embedded Tomcat`
 필자가 겪은 문제는 JWT Filter와 AOP의 조합에서 문제가 생겼는데 오류의 원인과 해결방법을 공유하보려고 한다.
 ---
 
@@ -49,7 +49,7 @@ AOP에서는 `PointCut`의 범위를 `JwtAuthenticationFilter`까지 포함할 �
     ```
 
 #### ***에러 내용***
-- 실행하면 내장 톰캣이 올라오지 않고 아래와 같은 에러가 발생한다. 다시 봐도 기분이 몹시 나쁘다. `Unable to start embedded Tomcat`
+- 실행하면 내장 톰캣이 올라오지 않고 아래와 같은 에러가 발생한다. 다시 봐도 기분이 몹시 나쁘다. `"this.logger" is null`, `Unable to start embedded Tomcat`
     ```java
     Cannot invoke "org.apache.commons.logging.Log.isDebugEnabled()" because "this.logger" is null
     
@@ -69,13 +69,13 @@ AOP에서는 `PointCut`의 범위를 `JwtAuthenticationFilter`까지 포함할 �
 
 ## ❓왓 더 Logger가 왜 Null인데
 
-Spring Security + JWT + AOP 조합에서 `JwtAuthenticationFilter`와 같은 필터가 AOP `PointCut`의 범위에 포함되는 순간 에러가 발생한다.
+Spring Security + JWT + AOP 조합에서 `JwtAuthenticationFilter`가 AOP `PointCut`의 범위에 포함되는 순간 에러가 발생한다.
 
 - Spring AOP는 메서드를 가로채기 위해 프록시 객체를 생성한다.
 - AOP는 클래스의 메서드만 프록시로 감싸고, 필드는 복제하지 않는다.
-- Lombok의 `@Slf4j`는 클래스에 `private static final log` 필드를 생성한다.
 - `JwtAuthenticationFilter`에서 상속받고 있는 `OncePerRequestFilter` 클래스에는 ```if (logger.isDebugEnabled()) {``` 구문이 존재한다.
-- 결국 `this.logger`는 null → `logger.isDebugEnabled()` 호출 시 NPE 발생하고 내장 톰캣이 올라오지 않는다.
+- 필드는 복제되지 않기 때문에 `logger.isDebugEnabled()` 호출 시 `"this.logger" is null`
+- 결국 내장 톰캣은 실행되지 못하고 `Unable to start embedded Tomcat`을 내뱉는다.
 
 ---
 
@@ -100,6 +100,6 @@ public void logPointcut() {}
 ---
 
 ## 👋 마치며
-로컬 환경에서도 로그 레벨을 `Error`로 해두고 개발을 하다가 콘솔에  
-`[Cannot invoke... is null]`이 찍히지 않아서 문제를 파악하지 못하고 있었다.
+로컬 환경에서도 로그 레벨을 `error`로 해두고 개발을 하다가 콘솔에  
+`[Cannot invoke... is null]`이 찍히지 않아서 문제를 정확하게 파악하지 못하고 있었다.
 옆자리 은인에게 도움을 받아서 해결.. (결국 로그 레벨의 중요성을 이제야 깨달은 멍청한 나의 탓)
