@@ -1,8 +1,8 @@
 ---
 emoji: "🧨"
 title: "Spring AOP + JWT logger is null 수정"
-date: 2025-04-04 16:00:00 +0900
-update: 2025-04-04 16:00:00 +0900
+date: 2025-04-06 16:00:00 +0900
+update: 2025-04-07 09:10:00 +0900
 tags:
     - spring
     - springboot
