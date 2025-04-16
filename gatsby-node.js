@@ -91,10 +91,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const slug = createFilePath({ node, getNode })
     const newSlug = `/${slug.split("/").reverse()[1]}/`
 
+    const replaceNewSlug = newSlug.replace(/\d{4}-\d{2}-\d{2}-/, "");
+
     createNodeField({
       node,
       name: `slug`,
-      value: newSlug,
+      value: replaceNewSlug,
     })
   }
 }
