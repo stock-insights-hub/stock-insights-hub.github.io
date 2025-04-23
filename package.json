@@ -10,7 +10,7 @@
     "@emotion/styled": "^11.14.0",
     "@giscus/react": "^3.0.0",
     "@mui/material": "^6.4.0",
-    "@rundevelrun/free-visitor-counter": "^1.1.1",
+    "@rundevelrun/free-visitor-counter": "^1.1.2",
     "@tippyjs/react": "^4.2.6",
     "babel-eslint": "^10.1.0",
     "babel-plugin-styled-components": "^2.1.4",
