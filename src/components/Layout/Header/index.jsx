@@ -121,6 +121,13 @@ const Header = ({ toggleTheme }) => {
   const [dashboardUrl, setDashboardUrl] = useState();
   const [totalCount, setTotalCount] = useState();
   const [todayCount, setTodayCount] = useState();
+  const [hasLoaded, setHasLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!hasLoaded) {
+      setHasLoaded(true);
+    }
+  }, []); // 처음 마운트 될 때 한 번만 실행
 
   const checkValue = value => {
     return value === null || value === "" || value === undefined
@@ -192,6 +199,7 @@ const Header = ({ toggleTheme }) => {
           <Tippy content={<> Total : {totalCount}<br/>Today : {todayCount} </>} placement="left">
             <a href={dashboardUrl} target="_blank" rel="noopener noreferrer">
               <FaChartPie />
+              {!hasLoaded && (
               <FreeVisitorCounter
                 style={{ display: "none" }}
                 onLoad={function (response) {
@@ -200,6 +208,7 @@ const Header = ({ toggleTheme }) => {
                   setTotalCount(response.totalCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
                 }}
               />
+              )}
             </a>
           </Tippy>
         </Menu>
