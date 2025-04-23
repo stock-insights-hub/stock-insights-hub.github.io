@@ -1,15 +1,23 @@
 import React, { useEffect, useState } from "react"
 import styled, { useTheme } from "styled-components"
-
+import { FreeVisitorCounter } from "@rundevelrun/free-visitor-counter"
 import { Link } from "gatsby"
+import Tippy from "@tippyjs/react";
+import 'tippy.js/dist/tippy.css'; // 기본 스타일 import
 
-import { headerTitle, headerSubTitle, themeColor } from "../../../../blog-config"
+import {
+  headerTitle,
+  headerSubTitle,
+  themeColor,
+} from "../../../../blog-config"
 
 import {
   FaSun,
   FaMoon,
   FaTags,
-  FaListUl, FaSearch
+  FaListUl,
+  FaSearch,
+  FaChartPie,
 } from "react-icons/fa"
 
 const HeaderWrapper = styled.header`
@@ -110,11 +118,13 @@ const Header = ({ toggleTheme }) => {
   const theme = useTheme()
   const [scrollY, setScrollY] = useState()
   const [hidden, setHidden] = useState(false)
+  const [dashboardUrl, setDashboardUrl] = useState();
+  const [totalCount, setTotalCount] = useState();
+  const [todayCount, setTodayCount] = useState();
 
-
-  const checkValue = (value) => {
-    return value === null || value === "" || value === undefined;
-  };
+  const checkValue = value => {
+    return value === null || value === "" || value === undefined
+  }
 
   const detectScrollDirection = () => {
     if (scrollY >= window.scrollY) {
@@ -139,17 +149,17 @@ const Header = ({ toggleTheme }) => {
   useEffect(() => {
     setScrollY(window.scrollY)
   }, [])
-  const [showFirstDiv, setShowFirstDiv] = useState(true);
+  const [showFirstDiv, setShowFirstDiv] = useState(true)
 
   useEffect(() => {
-    if(!checkValue(headerSubTitle)){
+    if (!checkValue(headerSubTitle)) {
       const interval = setInterval(() => {
-        setShowFirstDiv(prev => !prev);
-      }, 5000);
+        setShowFirstDiv(prev => !prev)
+      }, 5000)
 
-    return () => clearInterval(interval);
+      return () => clearInterval(interval)
     }
-  }, []);
+  }, [])
 
   return (
     <HeaderWrapper isHidden={hidden}>
@@ -157,10 +167,10 @@ const Header = ({ toggleTheme }) => {
         <BlogTitle>
           <Link to="/">
             {showFirstDiv ? (
-            <div dangerouslySetInnerHTML={{ __html: headerTitle }}></div>
-              ) : (
-            <div dangerouslySetInnerHTML={{ __html: headerSubTitle }}></div>
-              )}
+              <div dangerouslySetInnerHTML={{ __html: headerTitle }}></div>
+            ) : (
+              <div dangerouslySetInnerHTML={{ __html: headerSubTitle }}></div>
+            )}
           </Link>
         </BlogTitle>
         <Menu>
@@ -179,6 +189,19 @@ const Header = ({ toggleTheme }) => {
           <Link to="/search">
             <FaSearch />
           </Link>
+          <Tippy content={<> Total : {totalCount}<br/>Today : {todayCount} </>} placement="left">
+            <a href={dashboardUrl} target="_blank" rel="noopener noreferrer">
+              <FaChartPie />
+              <FreeVisitorCounter
+                style={{ display: "none" }}
+                onLoad={function (response) {
+                  setDashboardUrl(response.dashboardUrl);
+                  setTodayCount(response.todayCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+                  setTotalCount(response.totalCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+                }}
+              />
+            </a>
+          </Tippy>
         </Menu>
       </Inner>
     </HeaderWrapper>
