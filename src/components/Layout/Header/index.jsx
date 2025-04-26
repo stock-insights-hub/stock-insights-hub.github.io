@@ -118,6 +118,7 @@ const Header = ({ toggleTheme }) => {
   const theme = useTheme()
   const [scrollY, setScrollY] = useState()
   const [hidden, setHidden] = useState(false)
+  const [counterHidden, setCounterHidden] = useState(false)
   const [dashboardUrl, setDashboardUrl] = useState();
   const [totalCount, setTotalCount] = useState();
   const [todayCount, setTodayCount] = useState();
@@ -187,6 +188,22 @@ const Header = ({ toggleTheme }) => {
               <FaMoon onClick={toggleTheme} />
             </IconRail>
           </ToggleWrapper>
+          <Tippy content={<> Total : {totalCount}<br/>Today : {todayCount} </>} placement="bottom-start" visible={counterHidden && !hidden}>
+            <a href={dashboardUrl} target="_blank" rel="noopener noreferrer">
+              <FaChartPie />
+              {!hasLoaded && (
+                <FreeVisitorCounter
+                  style={{ display: "none" }}
+                  onLoad={function (response) {
+                    setDashboardUrl(response.dashboardUrl);
+                    setTodayCount(response.todayCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+                    setTotalCount(response.totalCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+                    setCounterHidden(true);
+                  }}
+                />
+              )}
+            </a>
+          </Tippy>
           <Link to="/tags">
             <FaTags />
           </Link>
@@ -194,23 +211,8 @@ const Header = ({ toggleTheme }) => {
             <FaListUl />
           </Link>
           <Link to="/search">
-            <FaSearch />
+            <FaSearch/>
           </Link>
-          <Tippy content={<> Total : {totalCount}<br/>Today : {todayCount} </>} placement="left">
-            <a href={dashboardUrl} target="_blank" rel="noopener noreferrer">
-              <FaChartPie />
-              {!hasLoaded && (
-              <FreeVisitorCounter
-                style={{ display: "none" }}
-                onLoad={function (response) {
-                  setDashboardUrl(response.dashboardUrl);
-                  setTodayCount(response.todayCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
-                  setTotalCount(response.totalCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
-                }}
-              />
-              )}
-            </a>
-          </Tippy>
         </Menu>
       </Inner>
     </HeaderWrapper>
