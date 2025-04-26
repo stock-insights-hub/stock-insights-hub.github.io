@@ -1,6 +1,6 @@
 ---
 emoji: "☝️"
-title: "블로그/홈페이지 방문자 카운터 무료 배포를 위한 요구사항 분석"
+title: "무료 블로그 방문자 카운터 만들기 | 설치부터 배포까지 요구사항 총정리"
 date: 2025-04-26 13:30:00 +0900
 update: 2025-04-26 13:30:00 +0900
 tags:
@@ -8,7 +8,11 @@ tags:
   - opensource
   - free
   - blog
+  - github-pages
+  - react
+  - flask
 series: "📊 블로그/홈페이지 방문자 카운터 무료 배포하기"
+description: "무료로 사용할 수 있는 블로그 및 홈페이지 방문자 카운터를 직접 제작합니다. Flask API 서버와 React 컴포넌트를 조합하여 Github Pages에서도 쉽게 설치할 수 있는 방법을 소개합니다."
 ---
 
 ## ✋ 들어가며
@@ -20,7 +24,7 @@ series: "📊 블로그/홈페이지 방문자 카운터 무료 배포하기"
 사실 이미 만들어져있는 상태로 게시글을 쓰고있기 때문에 완성된 모습은
 필자가 제작한 [Gatsby 테마 README](http://github.com/rundevelrun/gatsby-starter-rundevelrun)를 살펴보면 자세한 내용을 볼 수 있다.
 
-## 📋 요구사항을 분석해보자
+## 📋 무료 방문자 카운터의 요구사항을 분석해보자
 
 ### 기능 요구사항 (Functional Requirements)
 
