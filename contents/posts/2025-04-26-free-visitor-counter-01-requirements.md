@@ -24,15 +24,17 @@ description: "무료로 사용할 수 있는 블로그 및 홈페이지 방문�
 ## 😎 완성된 소스 미리보기
 사실 이미 완료되어 서비스를 진행중이기 때문에 급하신 분들은 아래 링크를 확인하면 된다.
 
-- **API & Dashboard**
-  - [대시보드 화면](https://visitor.6developer.com/dashboard?domain=6developer.com)
-  - [API 문서](https://visitor.6developer.com/api-docs)
-  - [소스 공개 (Github)](https://github.com/rundevelrun/free-visit-counter-api-dashboard)
-- **NPM Package**
-  - [NPM Registry](https://www.npmjs.com/package/@rundevelrun/free-visitor-counter)
-  - [소스 코드 (Github)](https://github.com/rundevelrun/free-visitor-counter)
-- **적용된 블로그 테마**
-  - [Gatsby테마(gatsby-starter-rundevelrun)](https://github.com/rundevelrun/gatsby-starter-rundevelrun)
+> **API & Dashboard**
+>  - [대시보드 화면](https://visitor.6developer.com/dashboard?domain=6developer.com)
+>  - [API 문서](https://visitor.6developer.com/api-docs)
+>  - [소스 공개 (Github)](https://github.com/rundevelrun/free-visit-counter-api-dashboard)
+>
+> **NPM Package**
+>  - [NPM Registry](https://www.npmjs.com/package/@rundevelrun/free-visitor-counter)
+>  - [소스 코드 (Github)](https://github.com/rundevelrun/free-visitor-counter)
+>
+> **적용된 블로그 테마**
+>  - [Gatsby테마(gatsby-starter-rundevelrun)](https://github.com/rundevelrun/gatsby-starter-rundevelrun)
 
 ## 📋 무료 방문자 카운터 요구사항을 분석
 
