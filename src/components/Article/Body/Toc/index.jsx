@@ -120,7 +120,7 @@ const Toc = ({ items, articleOffset }) => {
               {item.innerText}
             </ParagraphTitle>
           ))}
-          <DisplayAds />
+          {/*<DisplayAds />*/}
         </div>
       </TocWrapper>
     </RevealOnScroll>
