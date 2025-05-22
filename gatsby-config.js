@@ -80,8 +80,12 @@ module.exports = {
               showCaptions: true,
             },
           },
-          // Removed gatsby-plugin-google-adsense to disable automatic ads
-          // Using custom AdSenseScript component instead
+          {
+            resolve: `gatsby-plugin-google-adsense`,
+            options: {
+              publisherId: `${adsense.client}`
+            },
+          },
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {

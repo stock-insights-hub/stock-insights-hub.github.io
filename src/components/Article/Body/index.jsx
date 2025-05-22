@@ -34,7 +34,7 @@ const Body = ({ html, hideToc }) => {
     <Wrapper>
       {hideToc || <Toc items={toc} articleOffset={offsetTop} />}
       <PrismTheme />
-      {/*<DisplayAds />*/}
+      <DisplayAds />
       <br/>
       <StyledMarkdown
         id="article-body"
@@ -42,7 +42,7 @@ const Body = ({ html, hideToc }) => {
         itemProp="articleBody"
         ref={ref}
       />
-      {/*<DisplayAds />*/}
+      <DisplayAds />
     </Wrapper>
   )
 }

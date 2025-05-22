@@ -7,7 +7,6 @@ import { setLight, setDark } from "reducers/theme"
 import { light, dark } from "assets/theme"
 
 import GlobalStyles from "components/GlobalStyles"
-import AdSenseScript from "components/AdSenseScript"
 
 import Header from "./Header"
 import Body from "./Body"
@@ -41,7 +40,6 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={theme === "light" ? light : dark}>
-      <AdSenseScript />
       <Header toggleTheme={toggleTheme} />
       <Body>{children}</Body>
       <Footer />

@@ -102,11 +102,11 @@ const PostList = ({ postList }) => {
               <Excerpt>{excerpt}</Excerpt>
               <TagList tagList={tags} />
             </PostWrapper>
-            {/*{*/}
-            {/*  (i == 0 || i==2) && (*/}
-            {/*    <DisplayAds />*/}
-            {/*  )*/}
-            {/*}*/}
+            {
+              (i == 0 || i==2) && (
+                <DisplayAds />
+              )
+            }
             {postCount - 1 !== i && postList.length - 1 !== i && (
               <Divider mt="48px" mb="32px" />
             )}
