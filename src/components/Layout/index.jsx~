@@ -41,7 +41,6 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={theme === "light" ? light : dark}>
-      <AdSenseScript />
       <Header toggleTheme={toggleTheme} />
       <Body>{children}</Body>
       <Footer />
