@@ -26,7 +26,7 @@ const DisplayAds = () => {
     }
   }, [])
   return (
-    <></>
+    ''
     /*<ins className="adsbygoogle"
          style={{display: 'block'}}
          data-ad-client={adsense.client}
