@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://6developer.com/sitemap-index.xml
-Host: https://6developer.com
+Sitemap: https://stock-insights-hub.github.io/sitemap-index.xml
+Host: https://stock-insights-hub.github.io
