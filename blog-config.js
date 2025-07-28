@@ -1,9 +1,9 @@
 module.exports = {
-  title: "RUN:DEVEL:RUN",    // SEO Blog title
-  headerTitle: "STOCK:<em style='color:#ed6c02'>INSIGHT</em>:HUB", // Logo 1
-  copyright: "©stock:insight:hub", // copyright in footer
-  author: "stock:insight:hub",  // Your Name
-  siteUrl: "https://6developer.com/", // Your Site URL
+  title: "stock:insights:hub",    // SEO Blog title
+  headerTitle: "STOCK:<em style='color:#ed6c02'>INSIGHTS</em>:HUB", // Logo 1
+  copyright: "©stock:insights:hub", // copyright in footer
+  author: "stock:insights:hub",  // Your Name
+  siteUrl: "https://stock-insights-hub.github.io", // Your Site URL
   description: "",  // Blog description
   links: {
 

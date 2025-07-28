@@ -46,7 +46,7 @@ module.exports = {
       options: {
         name: title,
         short_name: title,
-        description: description,
+        description: `description`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ced4da`,
